@@ -1,0 +1,10 @@
+Options -MultiViews -Indexes
+RewriteEngine On
+
+# Блокируем прямой доступ к служебным папкам
+RewriteRule ^(constants|md)/ - [F,L]
+
+# SPA fallback - только если файл или папка не существует
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
