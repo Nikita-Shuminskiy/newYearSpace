@@ -1,7 +1,7 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
-import { useYandexMetrika } from './hooks/useYandexMetrika';
-
+import {Helmet} from 'react-helmet';
+import {useYandexMetrika} from './hooks/useYandexMetrika';
+import {PreviewSection} from "@/components/features/Competition/PreviewSection.tsx";
 
 
 const App: React.FC = () => {
@@ -32,9 +32,8 @@ const App: React.FC = () => {
         <meta charSet="UTF-8" />
       </Helmet>
 
-      <div>
-
-        1111
+        <div className="">
+          <PreviewSection/>
       </div>
 
     </>

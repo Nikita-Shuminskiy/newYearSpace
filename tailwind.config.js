@@ -30,7 +30,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        'firs': ['OpenSans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          'machina': ['"PP Neue Machina"', 'sans-serif'],
+          'firs': ['OpenSans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         'firs-bold': ['OpenSans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
         'unbounded': ['Unbounded', 'sans-serif'],
       },
