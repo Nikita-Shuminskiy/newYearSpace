@@ -32,9 +32,11 @@ const App: React.FC = () => {
         <meta charSet="UTF-8" />
       </Helmet>
 
-        <div className="">
-          <PreviewSection/>
-      </div>
+<div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+    <PreviewSection/>
+</div>
+
+        {/*<div className={"h-screen w-full bg-red-500 flex justify-center items-center"}> 123</div>*/}
 
     </>
   );

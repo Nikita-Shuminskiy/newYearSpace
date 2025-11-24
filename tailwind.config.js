@@ -46,6 +46,9 @@ module.exports = {
         '4xl': ['36px', '1.3'],
         '5xl': ['62px', '1.2'],
         '6xl': ['82px', '1.3'],
+          'clamp-sm': 'clamp(0.875rem, 2vw, 1.25rem)',
+          'clamp-base': 'clamp(1rem, 2.5vw, 1.5rem)',
+          'clamp-xl': 'clamp(2rem, 6vw, 4rem)',
       },
       letterSpacing: {
         'tight': '-0.03em',
@@ -75,14 +78,10 @@ module.exports = {
         'xs': '2px',
       },
       screens: {
-        'mobile': { max: '767px' },
-        'mobile-sm': { max: '480px' },
-        'tablet': { min: '768px', max: '1279px' },
-        'tablet-xl': { min: '1024px', max: '1279px' }
-        ,
-        'desktop': { min: '1280px' },
-        'desktop-lg': { min: '1280px', max: '1579px' },
-        'desktop-xl': { min: '1580px' },
+          'mobile-only': { min: '320px', max: '743px' },
+          'tablet-only': { min: '744px', max: '1279px' },
+          'desktop-only': { min: '1280px', max: '1979px' },
+          'desktop-xl-only': { min: '1980px' },
         ...defaultTheme.screens,
       },
 
