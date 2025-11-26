@@ -2,6 +2,7 @@ import React from 'react';
 import {Helmet} from 'react-helmet';
 import {useYandexMetrika} from './hooks/useYandexMetrika';
 import {PreviewSection} from "@/components/features/Competition/PreviewSection.tsx";
+import {WinnersList} from "@/components/features/Competition/WinnersList.tsx";
 
 
 const App: React.FC = () => {
@@ -34,6 +35,7 @@ const App: React.FC = () => {
 
 <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
     <PreviewSection/>
+    <WinnersList/>
 </div>
 
         {/*<div className={"h-screen w-full bg-red-500 flex justify-center items-center"}> 123</div>*/}

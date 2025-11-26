@@ -507,10 +507,5 @@ return (
                 </filter>
             </defs>
         </svg>
-
-
-
-
-
     </section>
 )};
