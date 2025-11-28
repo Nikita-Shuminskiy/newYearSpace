@@ -22,26 +22,35 @@ export const WinnersList = () => {
 
     const winnersMember = [
         {
+            id: 1,
             name: "Иванов Иван",
             number: "#000000",
             balls: 17
         },
         {
+            id: 2,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17
         },
         {
+            id: 3,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17
         },
         {
+            id: 4,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17
         },
         {
+            id: 5,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17,
@@ -49,6 +58,8 @@ export const WinnersList = () => {
 
         },
         {
+            id: 6,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17,
@@ -56,6 +67,8 @@ export const WinnersList = () => {
 
         },
         {
+            id: 7,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17,
@@ -63,6 +76,8 @@ export const WinnersList = () => {
 
         },
         {
+            id: 8,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17,
@@ -70,6 +85,8 @@ export const WinnersList = () => {
 
         },
         {
+            id: 9,
+
             name: "Иванов Иван",
             number: "#000000",
             balls: 17,
@@ -132,8 +149,8 @@ export const WinnersList = () => {
                 {/*Полоса*/}
                 {content !== 'mobile-only' &&
                     <div className={"flex flex-col p-[0.7vw] tablet-only:p-[1vw]"}>
-                        {winnersMember.map(item => (
-                            <div className={"flex justify-between items-center p-2 tablet-only:p-1 pb-[0.85vw] tablet-only:pb-[1.4vw] mobile-only:pb-[0vw] mobile-only:p-1 mobile-only:pl-[3vw] mobile-only:pt-[2.5vw] tablet-only:pl-[0.7vw]"}>
+                        {winnersMember.map((item) => (
+                            <div key={item.id} className={"flex justify-between items-center p-2 tablet-only:p-1 pb-[0.85vw] tablet-only:pb-[1.4vw] mobile-only:pb-[0vw] mobile-only:p-1 mobile-only:pl-[3vw] mobile-only:pt-[2.5vw] tablet-only:pl-[0.7vw]"}>
                                 <div className={"flex items-center"}>
                                     <div className={"w-[2.7vw] h-[2.7vw] tablet-only:w-[4.6vw] tablet-only:h-[4.6vw] mobile-only:w-[10vw] mobile-only:h-[10vw] rounded-full bg-yellow-300/30 flex justify-center items-center pl-[0.11vw]"}>
                                         {item.icon ? <svg className={"w-[2vw] tablet-only:w-[3vw]"} viewBox="0 0 42 42" fill="none">

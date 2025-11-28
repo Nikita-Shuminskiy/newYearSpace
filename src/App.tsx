@@ -3,6 +3,9 @@ import {Helmet} from 'react-helmet';
 import {useYandexMetrika} from './hooks/useYandexMetrika';
 import {PreviewSection} from "@/components/features/Competition/PreviewSection.tsx";
 import {WinnersList} from "@/components/features/Competition/WinnersList.tsx";
+import {HeroSection} from "@/components/features/Competition/HeroSection.tsx";
+import {RulesSection} from "@/components/features/Competition/RulesSection.tsx";
+import {SponsorSection} from "@/components/features/Competition/SponsorSection.tsx";
 
 
 const App: React.FC = () => {
@@ -33,9 +36,17 @@ const App: React.FC = () => {
         <meta charSet="UTF-8" />
       </Helmet>
 
-<div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
-    <PreviewSection/>
+<div>
+    <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+        <PreviewSection/>
+
+    </div>
     <WinnersList/>
+    <HeroSection/>
+        <div>
+        <RulesSection />
+    </div>
+            <SponsorSection />
 </div>
 
         {/*<div className={"h-screen w-full bg-red-500 flex justify-center items-center"}> 123</div>*/}

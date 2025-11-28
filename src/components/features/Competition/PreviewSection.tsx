@@ -20,6 +20,7 @@ if (width < 744) {
 } else {
     content = "Список победителей";
 }
+
 return (
     <section
         className="
