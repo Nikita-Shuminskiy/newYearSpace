@@ -21,10 +21,10 @@ export const SponsorSection = () => {
         <section
             className="
             relative w-full overflow-hidden
-            aspect-[16/10] md:aspect-[16/9]
             tablet-only:aspect-[16/9]
             mobile-only:aspect-[1/1.2] mobile-only:h-[100vw]
-            -mt-[0.1vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]"
+            -mt-[0.1vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]
+            "
         >
 
             {/*Текст*/}

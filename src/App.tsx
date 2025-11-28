@@ -6,6 +6,7 @@ import {WinnersList} from "@/components/features/Competition/WinnersList.tsx";
 import {HeroSection} from "@/components/features/Competition/HeroSection.tsx";
 import {RulesSection} from "@/components/features/Competition/RulesSection.tsx";
 import {SponsorSection} from "@/components/features/Competition/SponsorSection.tsx";
+import {Footer} from "@/components/layout/Footer/Footer.tsx";
 
 
 const App: React.FC = () => {
@@ -47,6 +48,7 @@ const App: React.FC = () => {
         <RulesSection />
     </div>
             <SponsorSection />
+    <Footer/>
 </div>
 
         {/*<div className={"h-screen w-full bg-red-500 flex justify-center items-center"}> 123</div>*/}
