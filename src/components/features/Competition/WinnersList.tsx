@@ -101,7 +101,7 @@ export const WinnersList = () => {
             aspect-[16/10] md:aspect-[16/9]
             tablet-only:aspect-[16/9]
             tablet-only:h-[78.646vw]
-            mobile-only:aspect-[1/1.2] mobile-only:h-screen
+            mobile-only:aspect-[1/1.2] mobile-only:h-[210vw]
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
         "
         >
