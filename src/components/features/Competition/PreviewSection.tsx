@@ -28,15 +28,42 @@ if (width < 744) {
         offset: ["start end", "end start"]
     });
 
-    const getYOffset = (width: number) => {
+    const cardsRef = useRef(null);
+    const { scrollYProgress: cardsScrollYProgress } = useScroll({
+        target: cardsRef,
+        offset: ["start end", "end start"]
+    });
+
+    const socialRef = useRef(null);
+    const { scrollYProgress: socialScrollYProgress } = useScroll({
+        target: cardsRef,
+        offset: ["start end", "end start"]
+    });
+
+    const TopYOffset = (width: number) => {
         if (width < 744) return ["0%", "-14%"];
         if (width < 1280) return ["10%", "-10%"];
         if (width < 1980) return ["10%", "-15%"];
         return ["15%", "-17%"];
     };
+    const BotYOffset = (width: number) => {
+        if (width < 744) return ["0%", "0%"];
+        if (width < 1280) return ["-110%", "150%"];
+        if (width < 1980) return ["-60%", "90%"];
+        return ["-30%", "90%"];
+    };
+    const BotSocialYOffset = (width: number) => {
+        if (width < 744) return ["0%", "0"];
+        if (width < 1280) return ["-110%", "150%"];
+        if (width < 1980) return ["-60%", "150%"];
+        return ["-20%", "150%"];
+    };
 
 
-    const y = useTransform(scrollYProgress, [0, 1], getYOffset(width));
+
+    const yTop = useTransform(scrollYProgress, [0, 1], TopYOffset(width));
+    const yBot = useTransform(cardsScrollYProgress, [0, 1], BotYOffset(width));
+    const yBotSocial = useTransform(socialScrollYProgress, [0, 1], BotSocialYOffset(width));
 
 
 
@@ -107,7 +134,7 @@ return (
             </button>
         </div>
 
-        <div className="absolute left-0 bottom-0 w-full h-full pointer-events-none select-none overflow-hidden flex flex-col justify-end">
+        <motion.div className="absolute left-0 bottom-0 w-full h-full pointer-events-none select-none overflow-hidden flex flex-col justify-end">
 
             {/* СЛОЙ 1 (Самый дальний - Высокий) */}
             <svg
@@ -126,7 +153,7 @@ return (
             <div ref={ref} className="relative w-full h-[50vw] mobile-only:h-[78vw] overflow-hidden z-[10]">
                 {/* Оборачиваем все елки в motion.div */}
                 <motion.div
-                    style={{ y }}
+                    style={{ y: yTop }}
                     className="absolute inset-0 w-full h-full"
                 >
             {/* Елки */}
@@ -304,13 +331,17 @@ return (
 
 
 
-            <div className="
-            absolute z-50
-            left-[14.2vw] bottom-[7.95vw] mobile-only:bottom-[12.4vw] mobile-only:left-[4.7vw]
-            tablet-only:left-[3.5vw] tablet-only:bottom-[11.1vw]
-            flex items-center gap-[0.62vw] tablet-only:gap-[1.01vw] mobile-only:gap-[2vw] mobile-only:items-start
-            mobile-only:flex-col
-        ">
+            <motion.div
+                ref={cardsRef}
+                style={{ y: yBot }}
+                className="
+        absolute z-50
+        left-[14.2vw] bottom-[7.95vw] mobile-only:bottom-[12.4vw] mobile-only:left-[4.7vw]
+        tablet-only:left-[2.5vw] tablet-only:bottom-[11.1vw]
+        flex items-center gap-[0.62vw] tablet-only:gap-[1.01vw] mobile-only:gap-[2vw] mobile-only:items-start mobile-only:z-[30]
+        mobile-only:flex-col
+    "
+            >
                 {/* Карточка 1: CS Space */}
                 <div className="
     bg-[#488b9e] text-white
@@ -350,15 +381,20 @@ return (
                     </svg>
 
                 </div>
-            </div>
+            </motion.div>
 
             {/* --- ПРАВЫЙ БЛОК (Соцсети) --- */}
-            <div className="
-            absolute z-40
-            right-[14.2vw] bottom-[8.4vw]
-            tablet-only:right-[2.7vw] tablet-only:bottom-[11.3vw]
-            flex items-center gap-[0.45vw] tablet-only:gap-[0.35vw]
-            visible mobile-only:invisible">
+            <motion.div
+                ref={socialRef}
+                style={{ y: yBotSocial }}
+                className="
+        absolute z-40
+        right-[16.5vw] bottom-[9vw] desktop-only:right-[15.9vw]
+        tablet-only:right-[2.7vw] tablet-only:bottom-[11.3vw]
+        flex items-center gap-[0.45vw] tablet-only:gap-[0.35vw]
+        visible mobile-only:invisible
+    "
+            >
                 {/* VK */}
                 <a href="#" className="
                 w-[3vw] h-[3vw]
@@ -399,9 +435,7 @@ return (
                     </svg>
 
                 </a>
-            </div>
-
-        </div>
+            </motion.div>
         <img
             src={dedMoroz}
             alt="Ded Moroz"
@@ -555,5 +589,6 @@ return (
                 </filter>
             </defs>
         </svg>
+        </motion.div>
     </section>
 )};
