@@ -119,6 +119,7 @@ export const WinnersList = () => {
             tablet-only:h-[78.646vw]
             mobile-only:aspect-[1/1.2] mobile-only:h-[210vw]
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
+            bottom-[2px]
         "
         >
                 {/*Текст*/}
@@ -159,7 +160,7 @@ export const WinnersList = () => {
             <div className={"  flex justify-center pt-9 absolute desktop-xl-only:left-[14.1vw] desktop-only:left-[14.1vw] tablet-only:left-[5.8vw] mobile-only:left-[6vw]"}>
 
             <div className={"overflow-x-scroll ring-1 bg-white ring-[#C4EFFE] desktop-xl-only:rounded-[2vw] desktop-only:rounded-[2vw] " +
-                "desktop-xl-only:w-[46vw] desktop-xl-only:h-[36.7vw] desktop-only:w-[45.1vw] desktop-only:h-[39vw] tablet-only:w-[62vw] tablet-only:h-fit" +
+                "desktop-xl-only:w-[46vw] desktop-xl-only:h-[36.7vw] desktop-only:w-[45.1vw] desktop-only:h-[39vw] tablet-only:w-[62vw] tablet-only:h-[650px]" +
                 " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[400px] z-[999]"
             }>
                 {/*Полоса*/}
@@ -407,7 +408,7 @@ export const WinnersList = () => {
                 }
 
                 {content === 'tablet-only' &&
-                    <div className="absolute left-[43.6vw] rounded-[2vw]">
+                    <div className="overflow-x-scroll absolute left-[43.6vw] rounded-[2vw]">
                     <svg className={"relative w-[41vw]"} viewBox="0 0 307 444" fill="none">
                         <g clip-path="url(#clip0_43_2443)">
                             <rect width="307" height="444" rx="24" fill="#C4EFFE"/>
@@ -423,11 +424,11 @@ export const WinnersList = () => {
                             <path d="M-245.518 394.639C-303.789 408.628 -387.901 395.499 -436 384.982V426H307V367.891C275.943 375.557 236.802 393.205 197.167 387.45C152.208 380.922 96.2073 352.889 32.1216 368.84C8.27536 374.776 -10.216 391.028 -33.3114 394.639C-56.4067 398.25 -85.0074 377.765 -113.402 377.765C-160.097 377.765 -172.678 377.153 -245.518 394.639Z" fill="white" fill-opacity="0.2"/>
                             <path d="M-243.694 421.635C-302.044 435.873 -388.836 414.558 -437 403.854V517H307V386.46C275.901 394.262 214.79 404.434 187.019 400.336C158.71 396.158 95.9235 371.192 31.7516 387.426C7.87323 393.467 -0.0382385 406.754 -37.7516 410.039C-61.0886 412.072 -85.535 396.51 -113.968 396.51C-160.725 396.51 -170.757 403.839 -243.694 421.635Z" fill="white"/>
                         </g>
-                        <defs>
-                            <clipPath id="clip0_43_2443">
-                                <rect width="307" height="444" rx="24" fill="white"/>
-                            </clipPath>
-                        </defs>
+                        {/*<defs>*/}
+                        {/*    <clipPath id="clip0_43_2443">*/}
+                        {/*        <rect width="307" height="444" rx="24" fill="white"/>*/}
+                        {/*    </clipPath>*/}
+                        {/*</defs>*/}
                     </svg>
                     </div>
                 }
@@ -465,9 +466,9 @@ export const WinnersList = () => {
             />
             {/*/!*Герлянда*!/*/}
                 <svg className="absolute w-[27.8vw] left-[41.8vw] bottom-[6.6vw] z-[50]
-                desktop-only:w-[29vw] desktop-only:h-[29vw] desktop-only:-bottom-[2.5vw]
+                desktop-only:w-[28vw] desktop-only:h-[29vw] desktop-only:-bottom-[2.5vw]
                 desktop-only:left-[40.3vw] desktop-only:rotate-[0.02rad]
-                tablet-only:bottom-[5vw] tablet-only:left-[53.9vw] tablet-only:w-[31vw] tablet-only:h-[31vw] mobile-only:invisible"
+                tablet-only:bottom-[5vw] tablet-only:left-[53.9vw] tablet-only:w-[30.6vw] tablet-only:h-[31vw] mobile-only:invisible"
                      viewBox="0 0 549 395" fill="none">
                 <path d="M21.6297 66.1848C28.6103 70.8448 43.1345 83.4773 45.3866 96.7275C48.2017 113.29 36.3185 119.038 32.5247 117.676C28.7309 116.313 22.5617 99.7315 55.6749 96.3373C88.788 92.9431 117.992 149.231 166.275 152.406C214.557 155.58 228.311 135.085 222.845 112.693C217.379 90.3019 159.031 127.992 178.932 168.352C198.833 208.712 272.938 152.103 311.18 191.67C349.422 231.237 351.723 259.872 328.408 270.476C305.094 281.08 325.058 229.537 354.792 230.596C384.526 231.656 420.522 313.249 478.628 319.162C536.734 325.074 545.053 276.597 529.023 263.986C512.993 251.375 483.658 299.288 505.832 332.953C523.572 359.884 555.82 378.101 569.726 383.843" stroke="#488B9E"/>
                 <path d="M94.671 96.8186C92.5483 101.006 88.6313 103.287 85.922 101.913C83.2126 100.54 82.7371 96.0319 84.8597 91.8447C86.9824 87.6576 93.6088 86.7502 93.6088 86.7502C93.6088 86.7502 96.7937 92.6314 94.671 96.8186Z" fill="#FBDE52"/>

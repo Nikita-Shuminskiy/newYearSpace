@@ -115,8 +115,8 @@ export const HeroSection = () => {
             }
 
             {content === 'desktop-only' &&
-                <div className="absolute left-[41.5vw] rounded-[2vw]">
-                   <img src={test} className={"relative right-[28.1vw] -bottom-[2vw] w-[68.8vw]"} alt={'test'}/>
+                <div className="absolute left-[28.5vw] rounded-[2vw]">
+                   <img src={test} className={"relative right-[15.1vw] -bottom-[2vw] w-[97.8vw]"} alt={'test'}/>
                 </div>
                 }
 
