@@ -450,7 +450,7 @@ return (
                 ref={socialRef}
                 style={{ y: yBotSocial }}
                 className="
-        absolute z-[40]
+        absolute z-[30]
         right-[16.5vw] bottom-[9vw] desktop-only:right-[15.9vw]
         tablet-only:right-[2.7vw] tablet-only:bottom-[11.3vw]
         flex items-center gap-[0.45vw] tablet-only:gap-[0.35vw]
