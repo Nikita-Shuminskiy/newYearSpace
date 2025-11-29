@@ -91,6 +91,22 @@ export const WinnersList = () => {
             number: "#000000",
             balls: 17,
             icon: "happyBox"
+        },
+        {
+            id: 10,
+
+            name: "Иванов Иван",
+            number: "#000000",
+            balls: 17,
+            icon: "happyBox"
+        },
+        {
+            id: 11,
+
+            name: "Иванов Иван",
+            number: "#000000",
+            balls: 17,
+            icon: "happyBox"
         }
     ]
 
@@ -140,11 +156,11 @@ export const WinnersList = () => {
             </div>
 
             {/*Таблица + блок*/}
-            <div className={"flex justify-center pt-9 absolute desktop-xl-only:left-[14.1vw] desktop-only:left-[14.1vw] tablet-only:left-[5.8vw] mobile-only:left-[6vw]"}>
+            <div className={"  flex justify-center pt-9 absolute desktop-xl-only:left-[14.1vw] desktop-only:left-[14.1vw] tablet-only:left-[5.8vw] mobile-only:left-[6vw]"}>
 
-            <div className={"ring-1 bg-white ring-[#C4EFFE] desktop-xl-only:rounded-[2vw] desktop-only:rounded-[2vw] " +
+            <div className={"overflow-x-scroll ring-1 bg-white ring-[#C4EFFE] desktop-xl-only:rounded-[2vw] desktop-only:rounded-[2vw] " +
                 "desktop-xl-only:w-[46vw] desktop-xl-only:h-[36.7vw] desktop-only:w-[45.1vw] desktop-only:h-[39vw] tablet-only:w-[62vw] tablet-only:h-fit" +
-                " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-fit z-[999]"
+                " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[400px] z-[999]"
             }>
                 {/*Полоса*/}
                 {content !== 'mobile-only' &&
@@ -240,9 +256,9 @@ export const WinnersList = () => {
 
 
                 {content === 'mobile-only' &&
-                    <div className={"flex flex-col p-[1.3vw]"}>
+                    <div className={" flex flex-col p-[1.3vw]"}>
                     {winnersMember.map(item => (
-                        <div className={"flex justify-between items-center p-[2.3vw] pb-[0.8vw]"}>
+                        <div className={" flex justify-between items-center p-[2.3vw] pb-[0.8vw]"}>
                            <div>
                                <div className={"w-[10vw] h-[10vw] rounded-full bg-yellow-300/30 flex justify-center items-center pl-[0.11vw]"}>
                                    {item.icon ? <svg className={"w-[7vw] pb-1"} viewBox="0 0 42 42" fill="none">
