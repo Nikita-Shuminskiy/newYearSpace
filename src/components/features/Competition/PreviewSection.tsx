@@ -7,10 +7,14 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 
+type PreviewSectionProps = {
+    onCLickMenu: () => void;
+}
 
 
+export const PreviewSection: FC = ({onCLickMenu}:PreviewSectionProps) => {
 
-export const PreviewSection: FC = () => {
+
 const {width} = useWindowWidth();
 
 let content;
@@ -21,6 +25,18 @@ if (width < 744) {
 } else {
     content = "Список победителей";
 }
+
+    let contentWidth;
+    if (width >= 1980) {
+        contentWidth = 'desktop-xl-only'
+    } else if (width <= 1979 && width >= 1280) {
+        contentWidth = 'desktop-only'
+    } else if (width < 1280 && width >= 744) {
+        contentWidth = 'tablet-only'
+    } else {
+        contentWidth = 'mobile-only'
+    }
+
 
     const ref = useRef(null);
     const { scrollYProgress } = useScroll({
@@ -82,6 +98,14 @@ return (
         <div className="absolute top-0 left-0 w-full z-50">
             <Header />
         </div>
+        {contentWidth === 'mobile-only' &&
+            <button className={"z-[999] absolute top-[5vw] left-[80vw]  bg-white rounded-full w-[15vw] h-[15vw] flex justify-center items-center"} onClick={onCLickMenu}>
+                <svg className={"w-[8vw]"} viewBox="0 0 24 24" fill="none">
+                    <path d="M18.5459 16.7048C18.96 16.7049 19.2959 17.0407 19.2959 17.4548C19.2958 17.8689 18.9599 18.2047 18.5459 18.2048H5.45508C5.04095 18.2048 4.70522 17.8689 4.70508 17.4548C4.70508 17.0406 5.04086 16.7048 5.45508 16.7048H18.5459ZM18.5459 11.2498C18.9599 11.2499 19.2958 11.5857 19.2959 11.9998C19.2959 12.4139 18.96 12.7497 18.5459 12.7498H5.45508C5.04086 12.7498 4.70508 12.414 4.70508 11.9998C4.70522 11.5857 5.04095 11.2498 5.45508 11.2498H18.5459ZM18.5459 5.79565C18.96 5.79575 19.2959 6.1315 19.2959 6.54565C19.2958 6.95973 18.96 7.29556 18.5459 7.29565H5.45508C5.04092 7.29565 4.70517 6.95979 4.70508 6.54565C4.70508 6.13144 5.04086 5.79565 5.45508 5.79565H18.5459Z" fill="#488B9E"/>
+                </svg>
+            </button>
+        }
+
 
         <div className="relative z-40 flex flex-col items-center w-full pt-[14.4vw] pr-[3vw] tablet-only:pt-[21vw] mobile-only:pl-[3vw] mobile-only:pt-[60.5vw]">
             <p className="

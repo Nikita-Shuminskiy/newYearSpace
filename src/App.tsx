@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Helmet} from 'react-helmet';
 import {useYandexMetrika} from './hooks/useYandexMetrika';
 import {PreviewSection} from "@/components/features/Competition/PreviewSection.tsx";
@@ -7,12 +7,12 @@ import {HeroSection} from "@/components/features/Competition/HeroSection.tsx";
 import {RulesSection} from "@/components/features/Competition/RulesSection.tsx";
 import {SponsorSection} from "@/components/features/Competition/SponsorSection.tsx";
 import {Footer} from "@/components/layout/Footer/Footer.tsx";
+import {MenuMobail} from "@/components/features/Menu/MenuMobail.tsx";
 
 
 const App: React.FC = () => {
-
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
   useYandexMetrika();
-
   return (
     <>
 
@@ -37,11 +37,10 @@ const App: React.FC = () => {
         <meta charSet="UTF-8" />
       </Helmet>
 
-<div>
-    <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
-        <PreviewSection/>
-
-    </div>
+ <div className={isMenuOpen ? 'overflow-hidden h-screen' : ''}>
+ <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+        <PreviewSection onCLickMenu={() => setIsMenuOpen(true)} />
+ </div>
     <WinnersList/>
     <HeroSection/>
         <div>
@@ -50,8 +49,10 @@ const App: React.FC = () => {
             <SponsorSection />
     <Footer/>
 </div>
+        {isMenuOpen && (
+            <MenuMobail onClickBackMenu={() => setIsMenuOpen(false)}/>
+        )}
 
-        {/*<div className={"h-screen w-full bg-red-500 flex justify-center items-center"}> 123</div>*/}
 
     </>
   );
