@@ -10,18 +10,39 @@ type MenuMobailProps = {
 export const MenuMobail = ({onClickBackMenu}: MenuMobailProps) => {
 
     const menuTags = ["Главная", "Победители", "Лучшие задачи", "Правила участия", "Организаторы"]
+    const anchors: Record<string, string> = {
+        "Главная": "preview",
+        "Победители": "winners",
+        "Лучшие задачи": "tasks",
+        "Правила участия": "rules",
+        "Организаторы": "organizers",
+    };
+
+    const handleClick = (id: string) => {
+        onClickBackMenu(false);
+
+        setTimeout(() => {
+            const el = document.getElementById(id);
+            if (el) {
+                console.log(`Элемент с ID ${id} найден. Выполняю прокрутку.`);
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+            } else {
+                console.error(`Элемент с ID ${id} не найден. Проверьте ID внутри секции.`);
+            }
+        }, 100);
+    };
 
     return (
         <div className="fixed inset-0 z-[1000] w-full h-full
-                    bg-[#488B9E]/40 backdrop-blur-[30px] flex items-end justify-center">
-            <span className="absolute top-[9vw] text-[clamp(18px,2.7vw,18px)] font-machina text-white">
+                    bg-[#488B9E]/40 backdrop-blur-[10px] flex items-end justify-center">
+            <span className="absolute top-[12vw] text-[clamp(18px,2.7vw,18px)] font-machina text-white">
         Меню
       </span>
 
             <button
                 onClick={onClickBackMenu}
-                className="z-[1010] absolute top-[5vw] left-[80vw]
-                   bg-white/10 rounded-full w-[15vw] h-[15vw]
+                className="z-[1010] absolute top-[10vw] left-[80vw]
+                   bg-white/10 rounded-full w-[12vw] h-[12vw]
                    flex justify-center items-center"
             >
                 <svg className="w-[8vw]" viewBox="0 0 24 24" fill="none">
@@ -43,8 +64,15 @@ export const MenuMobail = ({onClickBackMenu}: MenuMobailProps) => {
 
             </div>
             <div className={"z-[200] bg-white w-full h-[72vw] gap-y-4 flex flex-col items-center justify-start pb-[9.5vw] text-[clamp(18px,2vw,18px)] font-machina text-[#488B9E]"}>
-                {menuTags.map((tag) => (
-                    <span key={tag} className={"hover:font-extrabold transition-all whitespace-nowrap"}>{tag}</span>
+                {menuTags.map((item, index) => (
+                    <button
+                        key={index}
+                        type="button"
+                        onClick={() => handleClick(anchors[item])}
+                        className="hover:font-extrabold transition-all whitespace-nowrap"
+                    >
+                        {item}
+                    </button>
                 ))}
             </div>
         </div>

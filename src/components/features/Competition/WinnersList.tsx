@@ -112,6 +112,7 @@ export const WinnersList = () => {
 
     return (
         <section
+            id="winners"
             className="
             relative w-full overflow-hidden
             aspect-[16/10] md:aspect-[16/9]
@@ -121,6 +122,7 @@ export const WinnersList = () => {
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
             bottom-[2px]
         "
+
         >
                 {/*Текст*/}
             <div className="relative z-40 flex flex-col items-center justify-start w-full pt-28 pr-[3vw] mobile-only:pl-[3vw] tablet-only:pt-14">
@@ -160,8 +162,8 @@ export const WinnersList = () => {
             <div className={"  flex justify-center pt-9 absolute desktop-xl-only:left-[14.1vw] desktop-only:left-[14.1vw] tablet-only:left-[5.8vw] mobile-only:left-[6vw]"}>
 
             <div className={"overflow-x-scroll ring-1 bg-white ring-[#C4EFFE] desktop-xl-only:rounded-[2vw] desktop-only:rounded-[2vw] " +
-                "desktop-xl-only:w-[46vw] desktop-xl-only:h-[36.7vw] desktop-only:w-[45.1vw] desktop-only:h-[39vw] tablet-only:w-[62vw] tablet-only:h-[650px]" +
-                " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[400px] z-[999]"
+                "desktop-xl-only:w-[46vw] desktop-xl-only:h-[36.7vw] desktop-only:w-[45.1vw] desktop-only:h-[39vw] tablet-only:w-[62vw] tablet-only:h-[60vw]" +
+                " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[142vw] z-[999]"
             }>
                 {/*Полоса*/}
                 {content !== 'mobile-only' &&
@@ -244,8 +246,8 @@ export const WinnersList = () => {
                                     <span className={"desktop-xl-only:text-[clamp(10px,1.2vw,52px)] desktop-only:text-[clamp(18px,1.2vw,18px)] mobile-only:text-[clamp(14px,0.6vw,14px)] font-machina font-bold text-[#488B9E] pl-[0.6vw] tablet-only:pl-[1.8vw]  pt-[0.3vw] desktop-only:pl-[0.8vw]"}>{item.name}</span>
                                 </div>
                                 <button className={"bg-cyan-600/10 rounded-2xl px-[0.3vw] ml-[0.5vw] tablet-only:mt-[0.5vw] tablet-only:ml-[1.2vw] font-machina  font-bold text-[#488B9E] flex items-center gap-0"}>
-                                    <span className={"pt-[0.3vw] desktop-xl-only:text-[clamp(18px,1.2vw,52px)] desktop-only:text-[clamp(16px,1.2vw,16px)] tablet-only:text-[clamp(14px,1.2vw,14px)] mobile-only:text-[clamp(12px,1vw,12px)] tablet-only:pr-[1.4vw] "}>{item.number}</span>
-                                    <svg className={"w-[0.3vw] tablet-only:w-[0.8vw]"} viewBox="0 0 5 9" fill="none">
+                                    <span className={"pt-[0.3vw] desktop-xl-only:text-[clamp(18px,1.2vw,52px)] desktop-only:text-[clamp(16px,1.2vw,16px)] tablet-only:text-[clamp(14px,1.2vw,14px)] mobile-only:text-[clamp(12px,1vw,12px)] tablet-only:pr-[1.4vw]"}>{item.number}</span>
+                                    <svg className={"w-[0.3vw] tablet-only:w-[0.8vw]  desktop-only:w-[0.5vw] desktop-only:pt-[0.05vw] desktop-only:ml-[0.5vw]"} viewBox="0 0 5 9" fill="none">
                                         <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </button>
@@ -339,10 +341,10 @@ export const WinnersList = () => {
                                 <span className={"mobile-only:text-[clamp(14px,0.6vw,14px)] font-machina font-bold text-[#488B9E] pl-[0.6vw] pt-[0.3vw]"}>{item.name}</span>
                                 <span className={"font-machina text-[#488B9E] mobile-only:text-[clamp(12px,0.6vw,12px)]"}>{item.balls} баллов</span>
                             </div>
-                            <button className={"bg-[#488B9E33] rounded-2xl px-[1vw] font-machina font-bold text-[#488B9E] flex items-center gap-1 pr-[5vw]"}>
+                            <button className={"bg-[#488B9E33] rounded-2xl px-[1vw] font-machina font-bold text-[#488B9E] flex items-center gap-1 pr-[2vw]"}>
                                 <span className={"pt-[0.8vw] text-[clamp(12px,1vw,12px)]"}>{item.number}</span>
                                 <span>
-                                <svg className={"w-[1.7vw]"} viewBox="0 0 5 9" fill="none">
+                                <svg className={"w-[1.2vw] pt-[0.4vw]"} viewBox="0 0 5 9" fill="none">
                                     <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                                 </span>
@@ -408,7 +410,7 @@ export const WinnersList = () => {
                 }
 
                 {content === 'tablet-only' &&
-                    <div className="overflow-x-scroll absolute left-[43.6vw] rounded-[2vw]">
+                    <div className="absolute left-[43.6vw] rounded-[2vw]">
                     <svg className={"relative w-[41vw]"} viewBox="0 0 307 444" fill="none">
                         <g clip-path="url(#clip0_43_2443)">
                             <rect width="307" height="444" rx="24" fill="#C4EFFE"/>
@@ -424,11 +426,11 @@ export const WinnersList = () => {
                             <path d="M-245.518 394.639C-303.789 408.628 -387.901 395.499 -436 384.982V426H307V367.891C275.943 375.557 236.802 393.205 197.167 387.45C152.208 380.922 96.2073 352.889 32.1216 368.84C8.27536 374.776 -10.216 391.028 -33.3114 394.639C-56.4067 398.25 -85.0074 377.765 -113.402 377.765C-160.097 377.765 -172.678 377.153 -245.518 394.639Z" fill="white" fill-opacity="0.2"/>
                             <path d="M-243.694 421.635C-302.044 435.873 -388.836 414.558 -437 403.854V517H307V386.46C275.901 394.262 214.79 404.434 187.019 400.336C158.71 396.158 95.9235 371.192 31.7516 387.426C7.87323 393.467 -0.0382385 406.754 -37.7516 410.039C-61.0886 412.072 -85.535 396.51 -113.968 396.51C-160.725 396.51 -170.757 403.839 -243.694 421.635Z" fill="white"/>
                         </g>
-                        {/*<defs>*/}
-                        {/*    <clipPath id="clip0_43_2443">*/}
-                        {/*        <rect width="307" height="444" rx="24" fill="white"/>*/}
-                        {/*    </clipPath>*/}
-                        {/*</defs>*/}
+                        <defs>
+                            <clipPath id="clip0_43_2443">
+                                <rect width="307" height="444" rx="24" fill="white"/>
+                            </clipPath>
+                        </defs>
                     </svg>
                     </div>
                 }

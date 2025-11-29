@@ -18,7 +18,7 @@ export const Footer = () => {
         {content !== 'mobile-only'
             ?
             <footer className="flex justify-center items-center w-full mb-[1vw] mt-[10vw]">
-                <div className=" border-t-2 border-[#488B9E] flex items-center justify-between w-[69.5vw] h-[5vw] desktop-only:w-[68.5vw] tablet-only:w-[85vw] mobile-only:w-[87vw] mobile-only:h-[45vw]">
+                <div className=" border-t-[1px] border-[#488B9E] flex items-center justify-between w-[69.5vw] h-[5vw] desktop-only:w-[68.5vw] tablet-only:w-[85vw] mobile-only:w-[87vw] mobile-only:h-[45vw]">
                     <div>
                         <p className="text-[clamp(18px,1.3vw,18px)] font-machina text-[#488B9E] tracking-[-0.03em] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(14px,1.3vw,14px)]">computer.science@gmail.com</p>
                     </div>

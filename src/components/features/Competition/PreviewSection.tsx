@@ -85,6 +85,7 @@ if (width < 744) {
 
 return (
     <section
+        id="preview"
         className="
             relative w-full overflow-hidden
             aspect-[16/10] md:aspect-[16/9]
@@ -420,7 +421,7 @@ return (
     "
             >
                 {/* VK */}
-                <a href="#" className="
+                <a  className="
                 w-[3vw] h-[3vw]
                 min-w-[40px] min-h-[40px]
                 bg-[#488b9e] rounded-full
@@ -435,7 +436,7 @@ return (
                 </a>
 
 
-                <a href="#" className="
+                <a  className="
                 w-[3vw] h-[3vw] min-w-[40px] min-h-[40px]
                 bg-[#488b9e] rounded-full
                 flex items-center justify-center
@@ -448,7 +449,7 @@ return (
                 </a>
 
 
-                <a href="#" className="
+                <a  className="
                 w-[3vw] h-[3vw] min-w-[40px] min-h-[40px]
                 bg-[#488b9e] rounded-full
                 flex items-center justify-center

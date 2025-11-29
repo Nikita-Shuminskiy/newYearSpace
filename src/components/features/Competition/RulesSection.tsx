@@ -1,4 +1,5 @@
 import {useWindowWidth} from "@/hooks/useWindowWidth.ts";
+import StickerWinner from "@/assets/image/StickerWinner.png";
 
 
 
@@ -30,6 +31,7 @@ export const RulesSection = () => {
 
     return (
         <section
+            id="rules"
             className="
     relative overflow-hidden
     h-[39vw] w-[100vw]
@@ -621,7 +623,13 @@ export const RulesSection = () => {
                             </div>
                         </div>
                     </div>
-
+                    {content === 'mobile-only' &&
+                        <img
+                            src={StickerWinner}
+                            alt="StickerWinner"
+                            className="absolute w-[45vw] h-[45vw] -left-[46vw] -bottom-[8vw] z-[1000]"
+                        />
+                    }
                 </div>
             </div>
 

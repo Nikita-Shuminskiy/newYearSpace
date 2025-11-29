@@ -41,8 +41,9 @@ const App: React.FC = () => {
  <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
         <PreviewSection onCLickMenu={() => setIsMenuOpen(true)} />
  </div>
-    <WinnersList/>
-    <HeroSection/>
+         <WinnersList/>
+
+     <HeroSection/>
         <div>
         <RulesSection />
     </div>

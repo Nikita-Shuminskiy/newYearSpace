@@ -19,6 +19,7 @@ export const SponsorSection = () => {
 
     return (
         <section
+            id="organizers"
             className="
             relative w-full overflow-hidden
             tablet-only:aspect-[16/9]
