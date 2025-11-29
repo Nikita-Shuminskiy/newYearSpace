@@ -2,7 +2,8 @@ import { FC } from "react";
 import { Header } from "@/components/layout/Header/Header.tsx";
 import dedMoroz from "@/assets/image/dedMoroz.png";
 import {useWindowWidth} from "@/hooks/useWindowWidth.ts";
-
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 
 
@@ -20,6 +21,24 @@ if (width < 744) {
 } else {
     content = "Список победителей";
 }
+
+    const ref = useRef(null);
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start end", "end start"]
+    });
+
+    const getYOffset = (width: number) => {
+        if (width < 744) return ["0%", "-14%"];
+        if (width < 1280) return ["10%", "-10%"];
+        if (width < 1980) return ["10%", "-15%"];
+        return ["15%", "-17%"];
+    };
+
+
+    const y = useTransform(scrollYProgress, [0, 1], getYOffset(width));
+
+
 
 return (
     <section
@@ -93,11 +112,23 @@ return (
             {/* СЛОЙ 1 (Самый дальний - Высокий) */}
             <svg
                 viewBox="0 0 1936 713"
-                className="absolute bottom-[15.6vw] tablet-only:bottom-[30.5vw] w-full h-auto min-h-[40%] z-10 translate-y-[10%] mobile-only:scale-150 mobile-only:bottom-[44vw] mobile-only:w-[140vw] mobile-only:-left-[19vw]"
+                className="absolute bottom-[15.6vw] tablet-only:bottom-[30.5vw] w-full h-auto min-h-[40%] z-[10] translate-y-[10%] mobile-only:scale-150 mobile-only:bottom-[41vw] mobile-only:w-[140vw] mobile-only:-left-[19vw]"
             >
                 <path d="M96.8 463.115C60.1179 390.133 16.9825 353.378 0 344.123V693.168L1936 713V567.234C1836.14 536.494 1802.93 314.002 1726.37 150.503C1651.35 -9.70917 1569.47 43.8715 1534.21 91.0037C1462.79 186.458 1468.3 472.04 1399.01 493.855C1329.73 515.671 1311.39 414.527 1251.27 231.08C1191.15 47.633 1115.69 0.00427244 1082.06 0.00427244C1048.44 0.00427244 984.967 -3.41027 925.868 184.003C866.769 371.416 844.143 431.002 779.949 431.002C715.755 431.002 689.52 362.002 615.444 239.013C599.314 212.232 520.682 123.987 429.996 239.013C339.309 354.039 304.665 626.73 233.339 638.63C162.013 650.529 142.653 554.343 96.8 463.115Z" fill="#DAF7FE"/>
             </svg>
 
+
+
+
+
+
+
+            <div ref={ref} className="relative w-full h-[50vw] mobile-only:h-[78vw] overflow-hidden z-[10]">
+                {/* Оборачиваем все елки в motion.div */}
+                <motion.div
+                    style={{ y }}
+                    className="absolute inset-0 w-full h-full"
+                >
             {/* Елки */}
             {/*1*/}
             <svg
@@ -199,12 +230,28 @@ return (
                 <path d="M611.777 82.6135C477.577 82.6135 243.992 13.0179 0 0V592.731H1936V79.6311C1936 79.6311 1666.77 66.5466 1571.72 96.2048C1476.66 125.863 1023.49 100.566 921.244 73.9612C818.998 47.3561 772.114 82.6135 611.777 82.6135Z" fill="#A0E1F2"/>
             </svg>
             {/*затычка для мобилы слой 2*/}
+                    <svg
+                        viewBox="0 0 1936 274"
+                        className="invisible mobile-only:visible absolute bottom-[7.1vw] tablet-only:bottom-[18.2vw] left-0 w-full h-auto z-20 translate-y-[5%] mobile-only:bottom-[27vw]"
+                    >
+                        <path d="M611.777 82.6135C477.577 82.6135 243.992 13.0179 0 0V592.731H1936V79.6311C1936 79.6311 1666.77 66.5466 1571.72 96.2048C1476.66 125.863 1023.49 100.566 921.244 73.9612C818.998 47.3561 772.114 82.6135 611.777 82.6135Z" fill="#A0E1F2"/>
+                    </svg>
+                </motion.div>
+            </div>
             <svg
                 viewBox="0 0 1936 274"
-                className="invisible mobile-only:visible absolute bottom-[7.1vw] tablet-only:bottom-[18.2vw] left-0 w-full h-auto z-20 translate-y-[5%] mobile-only:bottom-[27vw]"
+                className="absolute bottom-[7.1vw] tablet-only:bottom-[17vw] left-0 w-full h-auto z-20 translate-y-[5%] mobile-only:bottom-[34.5vw]"
             >
                 <path d="M611.777 82.6135C477.577 82.6135 243.992 13.0179 0 0V592.731H1936V79.6311C1936 79.6311 1666.77 66.5466 1571.72 96.2048C1476.66 125.863 1023.49 100.566 921.244 73.9612C818.998 47.3561 772.114 82.6135 611.777 82.6135Z" fill="#A0E1F2"/>
             </svg>
+
+
+
+
+
+
+
+
 
             {/* СЛОЙ 3 (Олени) */}
             <svg
@@ -320,14 +367,14 @@ return (
                 flex items-center justify-center
                 text-white hover:bg-[#2c4e5e] transition
             ">
-                    {/* Вставь сюда SVG иконку VK */}
+
                     <svg className={"w-[1.5vw] tablet-only:w-[2.4vw]"} viewBox="0 0 28 17">
                         <path d="M26.6713 16.508H23.6293C22.4783 16.508 22.1322 15.576 20.0681 13.5118C18.2667 11.775 17.5056 11.5582 17.049 11.5582C16.4193 11.5582 16.2463 11.7312 16.2463 12.6007V15.3362C16.2463 16.0764 16.0065 16.51 14.0737 16.51C12.1979 16.384 10.379 15.8141 8.76657 14.8473C7.15419 13.8805 5.79456 12.5445 4.79966 10.9494C2.43771 8.0095 0.794262 4.55912 0 0.872565C0 0.415951 0.173055 0.00312161 1.0425 0.00312161H4.08242C4.8643 0.00312161 5.14577 0.351316 5.45227 1.15404C6.92844 5.49917 9.44712 9.27719 10.4688 9.27719C10.8607 9.27719 11.0317 9.10413 11.0317 8.12627V3.65187C10.9024 1.61065 9.81825 1.4376 9.81825 0.69951C9.83218 0.504831 9.92139 0.323235 10.067 0.193229C10.2125 0.0632235 10.403 -0.00496619 10.598 0.00312161H15.3768C16.0295 0.00312161 16.2463 0.328381 16.2463 1.11025V7.1484C16.2463 7.80101 16.5278 8.01785 16.7238 8.01785C17.1157 8.01785 17.4181 7.80101 18.1353 7.08377C19.6758 5.20508 20.9345 3.11201 21.8716 0.870481C21.9674 0.601232 22.1487 0.370715 22.3877 0.214108C22.6268 0.0575005 22.9105 -0.0165969 23.1956 0.00312161H26.2376C27.1487 0.00312161 27.3426 0.459736 27.1487 1.11025C26.0426 3.58813 24.674 5.94025 23.0663 8.12627C22.739 8.62667 22.6076 8.88729 23.0663 9.47318C23.3686 9.92979 24.4341 10.8201 25.1513 11.6666C26.1936 12.7063 27.0592 13.9091 27.7138 15.2278C27.9744 16.0743 27.5386 16.508 26.6713 16.508Z" fill="white"/>
                     </svg>
 
                 </a>
 
-                {/* Facebook / F */}
+
                 <a href="#" className="
                 w-[3vw] h-[3vw] min-w-[40px] min-h-[40px]
                 bg-[#488b9e] rounded-full
@@ -340,7 +387,7 @@ return (
 
                 </a>
 
-                {/* Telegram */}
+
                 <a href="#" className="
                 w-[3vw] h-[3vw] min-w-[40px] min-h-[40px]
                 bg-[#488b9e] rounded-full
