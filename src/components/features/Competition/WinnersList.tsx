@@ -247,7 +247,7 @@ export const WinnersList = () => {
                                 </div>
                                 <button className={"bg-cyan-600/10 rounded-2xl px-[0.3vw] ml-[0.5vw] tablet-only:mt-[0.5vw] tablet-only:ml-[1.2vw] font-machina  font-bold text-[#488B9E] flex items-center gap-0"}>
                                     <span className={"pt-[0.3vw] desktop-xl-only:text-[clamp(18px,1.2vw,52px)] desktop-only:text-[clamp(16px,1.2vw,16px)] tablet-only:text-[clamp(14px,1.2vw,14px)] mobile-only:text-[clamp(12px,1vw,12px)] tablet-only:pr-[1.4vw]"}>{item.number}</span>
-                                    <svg className={"w-[0.3vw] tablet-only:w-[0.8vw]  desktop-only:w-[0.5vw] desktop-only:pt-[0.05vw] desktop-only:ml-[0.5vw]"} viewBox="0 0 5 9" fill="none">
+                                    <svg className={"w-[0.4vw] ml-[0.5vw] tablet-only:w-[0.8vw]  desktop-only:w-[0.4vw] desktop-only:pt-[0.1.3vw] desktop-only:ml-[0.5vw]"} viewBox="0 0 5 9" fill="none">
                                         <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </button>

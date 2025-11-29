@@ -304,7 +304,7 @@ export const RulesSection = () => {
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M35.6119 10.2664C35.8512 10.233 36.0723 10.4 36.1056 10.6393C36.1529 10.9792 36.2287 11.5043 36.7641 11.9325C37.3204 12.3775 37.8706 12.4659 38.1676 12.4856C38.4087 12.5016 38.5912 12.71 38.5753 12.9511C38.5593 13.1922 38.3509 13.3747 38.1098 13.3587C37.7048 13.3319 36.9601 13.2098 36.2175 12.6158C35.407 11.9674 35.2925 11.1446 35.2405 10.7708C35.24 10.7672 35.2395 10.7636 35.239 10.76C35.2056 10.5207 35.3726 10.2997 35.6119 10.2664Z" fill="#F6D04D"/>
                         </svg>
                     </div>
-                    <p className={"text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,1vw,19px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] leading-[1] desktop-only:leading-[1.75vw] mobile-only:leading-[1] font-machina font-bold p-[1vw] pt-[0.8vw] tablet-only:pt-[1.6vw] tablet-only:p-[0.8vw] mobile-only:pt-[3vw]"}>
+                    <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,1vw,19px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] leading-[1] desktop-only:leading-[1.75vw] mobile-only:leading-[1] font-machina font-bold p-[1vw] pt-[0.8vw] tablet-only:pt-[1.6vw] tablet-only:p-[0.8vw] mobile-only:pt-[3vw]"}>
                         {content === 'desktop-xl-only' &&
                             <>
                             С 4 декабря по 14 декабря решить как можно больше задач
@@ -333,7 +333,7 @@ export const RulesSection = () => {
                                     <path d="M11.1052 1.00004L3.1248 7.27791L1.00021 4.54558" stroke="#488B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <p className={"text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] desktop-only:leading-[1.24vw] tablet-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.9vw] mobile-only:pt-[2vw]"}>
+                            <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] desktop-only:leading-[1.24vw] tablet-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.9vw] mobile-only:pt-[2vw]"}>
                                 {content === 'desktop-xl-only' &&
                                 <>
                                     4 декабря участникам откроются<br/>
@@ -385,7 +385,7 @@ export const RulesSection = () => {
                                     <path d="M11.1052 1.00004L3.1248 7.27791L1.00021 4.54558" stroke="#488B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
                             </div>
-                            <p className={"text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
+                            <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
 
                                 {content === 'tablet-only' ?
                                     <>
@@ -458,7 +458,7 @@ export const RulesSection = () => {
                             <path d="M14.1394 2.05166C14.1577 2.26173 13.9962 2.4474 13.7786 2.46637C13.561 2.48533 13.3698 2.33041 13.3515 2.12034C13.3332 1.91027 13.4947 1.7246 13.7123 1.70564C13.9299 1.68667 14.1211 1.84159 14.1394 2.05166Z" fill="#F0BA2F"/>
                         </svg>
                     </div>
-                    <p className={"text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(18px,2vw,18px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] leading-[1] desktop-only:leading-[1.2] tablet-only:leading-[0.9] font-machina font-bold p-[1vw] pt-[0.8vw] tablet-only:pt-[1.5vw] tablet-only:tracking-[-0.1em] desktop-only:pt-[1.4vw] desktop-only:pl-[1vw] mobile-only:pt-[4vw]"}>
+                    <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(18px,2vw,18px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] leading-[1] desktop-only:leading-[1.2] tablet-only:leading-[0.9] font-machina font-bold p-[1vw] pt-[0.8vw] tablet-only:pt-[1.5vw] tablet-only:tracking-[-0.1em] desktop-only:pt-[1.4vw] desktop-only:pl-[1vw] mobile-only:pt-[4vw]"}>
                         После 20 декабря объявим победителей
                     </p>
 
@@ -468,7 +468,7 @@ export const RulesSection = () => {
                                 <path d="M11.1052 1.00004L3.1248 7.27791L1.00021 4.54558" stroke="#488B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <p className={"text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pt-[1.5vw] mobile-only:pl-[2vw]"}>
+                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pt-[1.5vw] mobile-only:pl-[2vw]"}>
                             {content === 'desktop-xl-only' &&
                                 <>
                                     После соревнования мы предложим<br/>
@@ -510,7 +510,7 @@ export const RulesSection = () => {
                                 <path d="M11.1052 1.00004L3.1248 7.27791L1.00021 4.54558" stroke="#488B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </div>
-                        <p className={"text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[2vw] mobile-only:pt-[1.4vw]"}>
+                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[2vw] mobile-only:pt-[1.4vw]"}>
                             {content === 'desktop-xl-only' &&
                                 <>
                                     Так же расскажем подробнее про<br/> призы
@@ -586,7 +586,7 @@ export const RulesSection = () => {
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M12.4629 2.30377C12.5836 2.51309 12.5118 2.78062 12.3024 2.90131C11.8465 3.16417 10.9336 4.12759 11.4096 5.7759C11.4767 6.00804 11.3428 6.25057 11.1107 6.31761C10.8786 6.38466 10.636 6.25082 10.569 6.01868C9.9581 3.90353 11.1386 2.56232 11.8654 2.14329C12.0747 2.0226 12.3422 2.09445 12.4629 2.30377Z" fill="#FF7878"/>
                                 </svg>
                             </div>
-                            <p className={"text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,2vw,16px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] tablet-only:tracking-[-0.02em] leading-[1] desktop-only:leading-[1.3] font-machina font-bold p-[1vw] pt-[0.8vw] desktop-only:pt-[1.6vw] tablet-only:pt-[1.7vw] tablet-only:pl-[0.8vw] mobile-only:pt-[3.7vw] mobile-only:pl-[1.5vw]"}>
+                            <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,2vw,16px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] tablet-only:tracking-[-0.02em] leading-[1] desktop-only:leading-[1.3] font-machina font-bold p-[1vw] pt-[0.8vw] desktop-only:pt-[1.6vw] tablet-only:pt-[1.7vw] tablet-only:pl-[0.8vw] mobile-only:pt-[3.7vw] mobile-only:pl-[1.5vw]"}>
                                 Подарки за участие в соревнованиях
                             </p>
 
@@ -597,7 +597,7 @@ export const RulesSection = () => {
                                         <path d="M11.1052 1.00004L3.1248 7.27791L1.00021 4.54558" stroke="#488B9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
                                 </div>
-                                <p className={"text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw] mobile-only:pt-[1.6vw]"}>
+                                <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw] mobile-only:pt-[1.6vw]"}>
                                     {content === 'desktop-xl-only' &&
                                         <>
                                             Мерч CS Space (плюшевые елки,<br/> футболки)
