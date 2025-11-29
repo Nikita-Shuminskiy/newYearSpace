@@ -72,7 +72,8 @@ export const RulesSection = () => {
   tablet-only:text-[clamp(14px,1.3vw,14px)]
   mobile-only:text-[clamp(12px,0.4vw,12px)]
   desktop-only:text-[clamp(16px,4.5vw,16px)]
-
+  desktop-only:pb-[0.4vw]
+  tablet-only:pb-[0.8vw]
   pt-[1.5vw]
   pb-[0.3vw]
   `}>
