@@ -47,6 +47,7 @@ export default defineConfig({
     })
   ],
   server: {
+    host: '0.0.0.0', // Доступен на всех сетевых интерфейсах
     port: 3000,
     open: true,
     proxy: {
