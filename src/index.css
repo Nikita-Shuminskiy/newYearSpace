@@ -290,3 +290,111 @@ input:-webkit-autofill:active {
     -webkit-text-fill-color: inherit !important;
     transition: background-color 9999s ease-in-out 0s;
 }
+
+/* Анимация свечения для герлянды */
+@keyframes bulbGlow {
+    0%, 100% { 
+        opacity: 0.3; 
+    }
+    50% { 
+        opacity: 1; 
+    }
+}
+
+/* Анимация изменения цвета для конкретного path */
+@keyframes colorChange {
+    0%, 100% { 
+        fill: #00A8F2; 
+    }
+    25% { 
+        fill: #FF575D; 
+    }
+    50% { 
+        fill: #FBDE52; 
+    }
+    75% { 
+        fill: #00B35B; 
+    }
+}
+
+.animated-garland svg .color-changing-bulb {
+    animation: colorChange 3s ease-in-out infinite;
+}
+
+.animated-garland svg g[filter],
+.animated-garland svg > g > g[filter] {
+    animation: bulbGlow 9s ease-in-out infinite;
+}
+
+.animated-garland svg g[filter]:nth-of-type(1),
+.animated-garland svg > g > g[filter]:nth-of-type(1) { animation-delay: 0s; }
+.animated-garland svg g[filter]:nth-of-type(2),
+.animated-garland svg > g > g[filter]:nth-of-type(2) { animation-delay: 0.1s; }
+.animated-garland svg g[filter]:nth-of-type(3),
+.animated-garland svg > g > g[filter]:nth-of-type(3) { animation-delay: 0.2s; }
+.animated-garland svg g[filter]:nth-of-type(4),
+.animated-garland svg > g > g[filter]:nth-of-type(4) { animation-delay: 0.3s; }
+.animated-garland svg g[filter]:nth-of-type(5),
+.animated-garland svg > g > g[filter]:nth-of-type(5) { animation-delay: 0.4s; }
+.animated-garland svg g[filter]:nth-of-type(6),
+.animated-garland svg > g > g[filter]:nth-of-type(6) { animation-delay: 0.5s; }
+.animated-garland svg g[filter]:nth-of-type(7),
+.animated-garland svg > g > g[filter]:nth-of-type(7) { animation-delay: 0.6s; }
+.animated-garland svg g[filter]:nth-of-type(8),
+.animated-garland svg > g > g[filter]:nth-of-type(8) { animation-delay: 0.7s; }
+.animated-garland svg g[filter]:nth-of-type(9),
+.animated-garland svg > g > g[filter]:nth-of-type(9) { animation-delay: 0.8s; }
+.animated-garland svg g[filter]:nth-of-type(10),
+.animated-garland svg > g > g[filter]:nth-of-type(10) { animation-delay: 0.9s; }
+.animated-garland svg g[filter]:nth-of-type(11),
+.animated-garland svg > g > g[filter]:nth-of-type(11) { animation-delay: 1s; }
+.animated-garland svg g[filter]:nth-of-type(12),
+.animated-garland svg > g > g[filter]:nth-of-type(12) { animation-delay: 1.1s; }
+.animated-garland svg g[filter]:nth-of-type(13),
+.animated-garland svg > g > g[filter]:nth-of-type(13) { animation-delay: 1.2s; }
+.animated-garland svg g[filter]:nth-of-type(14),
+.animated-garland svg > g > g[filter]:nth-of-type(14) { animation-delay: 1.3s; }
+.animated-garland svg g[filter]:nth-of-type(15),
+.animated-garland svg > g > g[filter]:nth-of-type(15) { animation-delay: 1.4s; }
+.animated-garland svg g[filter]:nth-of-type(16),
+.animated-garland svg > g > g[filter]:nth-of-type(16) { animation-delay: 1.5s; }
+.animated-garland svg g[filter]:nth-of-type(17),
+.animated-garland svg > g > g[filter]:nth-of-type(17) { animation-delay: 1.6s; }
+.animated-garland svg g[filter]:nth-of-type(18),
+.animated-garland svg > g > g[filter]:nth-of-type(18) { animation-delay: 1.7s; }
+.animated-garland svg g[filter]:nth-of-type(19),
+.animated-garland svg > g > g[filter]:nth-of-type(19) { animation-delay: 1.8s; }
+.animated-garland svg g[filter]:nth-of-type(20),
+.animated-garland svg > g > g[filter]:nth-of-type(20) { animation-delay: 1.9s; }
+.animated-garland svg g[filter]:nth-of-type(21),
+.animated-garland svg > g > g[filter]:nth-of-type(21) { animation-delay: 2s; }
+.animated-garland svg g[filter]:nth-of-type(22),
+.animated-garland svg > g > g[filter]:nth-of-type(22) { animation-delay: 2.1s; }
+.animated-garland svg g[filter]:nth-of-type(23),
+.animated-garland svg > g > g[filter]:nth-of-type(23) { animation-delay: 2.2s; }
+.animated-garland svg g[filter]:nth-of-type(24),
+.animated-garland svg > g > g[filter]:nth-of-type(24) { animation-delay: 2.3s; }
+.animated-garland svg g[filter]:nth-of-type(25),
+.animated-garland svg > g > g[filter]:nth-of-type(25) { animation-delay: 2.4s; }
+.animated-garland svg g[filter]:nth-of-type(26),
+.animated-garland svg > g > g[filter]:nth-of-type(26) { animation-delay: 2.5s; }
+.animated-garland svg g[filter]:nth-of-type(27),
+.animated-garland svg > g > g[filter]:nth-of-type(27) { animation-delay: 2.6s; }
+.animated-garland svg g[filter]:nth-of-type(28),
+.animated-garland svg > g > g[filter]:nth-of-type(28) { animation-delay: 2.7s; }
+.animated-garland svg g[filter]:nth-of-type(29),
+.animated-garland svg > g > g[filter]:nth-of-type(29) { animation-delay: 2.8s; }
+.animated-garland svg g[filter]:nth-of-type(30),
+.animated-garland svg > g > g[filter]:nth-of-type(30) { animation-delay: 2.9s; }
+.animated-garland svg g[filter]:nth-of-type(31),
+.animated-garland svg > g > g[filter]:nth-of-type(31) { animation-delay: 3s; }
+.animated-garland svg g[filter]:nth-of-type(32),
+.animated-garland svg > g > g[filter]:nth-of-type(32) { animation-delay: 3.1s; }
+.animated-garland svg g[filter]:nth-of-type(33),
+.animated-garland svg > g > g[filter]:nth-of-type(33) { animation-delay: 3.2s; }
+.animated-garland svg g[filter]:nth-of-type(34),
+.animated-garland svg > g > g[filter]:nth-of-type(34) { animation-delay: 3.3s; }
+.animated-garland svg g[filter]:nth-of-type(35),
+.animated-garland svg > g > g[filter]:nth-of-type(35) { animation-delay: 3.4s; }
+.animated-garland svg g[filter]:nth-of-type(36),
+.animated-garland svg > g > g[filter]:nth-of-type(36) { animation-delay: 3.5s; }

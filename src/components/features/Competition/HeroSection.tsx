@@ -5,7 +5,7 @@ import test from "@/assets/image/test.png";
 import xlBest from "@/assets/image/xlBest.png";
 import tabletBest from "@/assets/image/tabletBest.png";
 import { TasksCard } from "./TasksCard.tsx";
-import GarlandCenter from "./gerland.svg";
+import { AnimatedGarland } from "./AnimatedGarland.tsx";
 
 export const HeroSection = () => {
 
@@ -96,44 +96,32 @@ export const HeroSection = () => {
             {content === 'desktop-xl-only' &&
                 <div className="absolute left-[13.4vw] rounded-[2vw]">
                     <img src={xlBest} className={"relative -bottom-[2vw] w-[69.5vw]"} alt={'xlBest'} />
-                    <img
-                        src={GarlandCenter}
-                        alt="GarlandCenter"
-                        className="absolute z-[100] top-[2vw] w-full h-auto"
-                    />
+                    <AnimatedGarland className="absolute z-[100] top-[-23vw] w-full h-auto" />
+                    <div className="absolute top-0 left-0 right-0 h-[2vw] bg-white z-[101]"></div>
                 </div>
             }
 
             {content === 'desktop-only' &&
                 <div className="absolute left-[28.5vw] rounded-[2vw]">
                     <img src={test} className={"relative right-[15.1vw] -bottom-[2vw] w-[97.8vw]"} alt={'test'} />
-                    <img
-                        src={GarlandCenter}
-                        alt="GarlandCenter"
-                        className="absolute z-[100] top-[2vw] right-[15vw] w-full h-auto"
-                    />
+                    <AnimatedGarland className="absolute z-[100] top-[-23vw] left-[-15.1vw] w-full h-auto" />
+                    <div className="absolute top-0 left-0 right-0 h-[2vw] bg-white z-[101]"></div>
                 </div>
             }
 
             {content === 'tablet-only' &&
                 <div className="absolute left-[6vw] pt-[2.5vw] rounded-[2vw]">
                     <img src={tabletBest} className={"relative -bottom-[0vw] w-[85vw]"} alt={'tabletBest'} />
-                    <img
-                        src={GarlandCenter}
-                        alt="GarlandCenter"
-                        className="absolute z-[100] top-[2.8vw] left-0 w-full h-auto"
-                    />
+                    <AnimatedGarland className="absolute z-[100] top-[-27vw] left-0 w-full h-auto" />
+                    <div className="absolute top-0 left-0 right-0 h-[3vw] bg-white z-[101]"></div>
                 </div>
             }
 
             {content === 'mobile-only' &&
                 <div className="absolute left-[0vw] right-[0vw] pt-[2.5vw] rounded-[2vw]">
                     <img src={tabletBest} className={"relative -bottom-[0vw] "} alt={'tabletBest'} />
-                    <img
-                        src={GarlandCenter}
-                        alt="GarlandCenter"
-                        className="absolute z-[100] top-[2.8vw]  left-0 w-full h-auto"
-                    />
+                    <AnimatedGarland className="absolute z-[100] top-[-32.5vw] left-0 w-full h-auto" />
+                    <div className="absolute top-0 left-0 right-0 h-[3vw] bg-white z-[101]"></div>
                 </div>
             }
 
@@ -147,7 +135,7 @@ export const HeroSection = () => {
                 className="z-[1000] relative w-[9.5vw] h-[9.5vw] bottom-[9vw] left-[21.3vw]
                  desktop-only:w-[8vw] desktop-only:h-[8vw] desktop-only:bottom-[6.3vw]
                  desktop-only:left-[22vw] tablet-only:left-[15vw] tablet-only:bottom-[10.6vw] tablet-only:w-[7vw] tablet-only:h-[7vw]
-                 mobile-only:bottom-[33vw] mobile-only:left-[9vw] mobile-only:w-[15vw] mobile-only:h-[15vw] mobile-only:rotate-[-0.55rad]"
+                 mobile-only:bottom-[40vw] mobile-only:left-[9vw] mobile-only:w-[10vw] mobile-only:h-[10vw] mobile-only:rotate-[-0.55rad]"
             />
             {/*Стикер*/}
             <img
