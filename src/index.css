@@ -303,22 +303,22 @@ input:-webkit-autofill:active {
 
 /* Анимация изменения цвета для конкретного path */
 @keyframes colorChange {
-    0%, 100% { 
-        fill: #00A8F2; 
+    0% { 
+        fill: #00A8F2!important; /* синий */
     }
-    25% { 
-        fill: #FF575D; 
+    33.33% { 
+        fill: #FBDE52!important; /* желтый */
     }
-    50% { 
-        fill: #FBDE52; 
+    66.66% { 
+        fill: #FF575D!important; /* красный */
     }
-    75% { 
-        fill: #00B35B; 
+    100% { 
+        fill: #00A8F2!important; /* синий (возврат к началу) */
     }
 }
 
-.animated-garland svg .color-changing-bulb {
-    animation: colorChange 3s ease-in-out infinite;
+.animated-garland svg g[filter] path[fill] {
+    transition: fill 0.5s ease-in-out;
 }
 
 .animated-garland svg g[filter],
