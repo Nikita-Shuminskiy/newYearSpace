@@ -93,7 +93,7 @@ export const RulesSection = () => {
 
 
             {content === 'desktop-xl-only' &&
-                <div className="z-[100] absolute bottom-0 left-0 right-0">
+                <div className="z-[100] absolute -bottom-0 left-0 right-0">
                     <svg
                         className="w-full h-auto"
                         viewBox="0 0 1980 887"

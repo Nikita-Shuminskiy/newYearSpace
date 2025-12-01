@@ -1,4 +1,3 @@
-import React from "react";
 import menuMoroz from "@/assets/image/menuMoroz.png";
 
 
@@ -19,15 +18,12 @@ export const MenuMobail = ({ onClickBackMenu }: MenuMobailProps) => {
     };
 
     const handleClick = (id: string) => {
-        onClickBackMenu(false);
+        onClickBackMenu();
 
         setTimeout(() => {
             const el = document.getElementById(id);
             if (el) {
-                console.log(`Элемент с ID ${id} найден. Выполняю прокрутку.`);
                 el.scrollIntoView({ behavior: "smooth", block: "start" });
-            } else {
-                console.error(`Элемент с ID ${id} не найден. Проверьте ID внутри секции.`);
             }
         }, 100);
     };

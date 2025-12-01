@@ -7,8 +7,8 @@ import { WinnersTable } from "./WinnersTable.tsx";
 export const WinnersList = () => {
 
     const { width } = useWindowWidth();
-
-    let content;
+    type ContentWidth = "desktop-xl-only" | "desktop-only" | "tablet-only" | "mobile-only";
+    let content: ContentWidth;
     if (width >= 1980) {
         content = 'desktop-xl-only'
     } else if (width <= 1979 && width >= 1280) {
@@ -167,7 +167,7 @@ export const WinnersList = () => {
                     " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[142vw] z-[999]"
                 }>
 
-                    <WinnersTable winnersMember={winnersMember} />
+                    <WinnersTable winnersMember={winnersMember} content={content}/>
 
                 </div>
 

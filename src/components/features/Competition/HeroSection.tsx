@@ -1,17 +1,17 @@
 import StickerKnopka from "@/assets/image/StickerKnopka.png";
 import Snowman from "@/assets/image/Snowman.png";
-import { useWindowWidth } from "@/hooks/useWindowWidth.ts";
+import {useWindowWidth} from "@/hooks/useWindowWidth.ts";
 import test from "@/assets/image/test.png";
 import xlBest from "@/assets/image/xlBest.png";
 import tabletBest from "@/assets/image/tabletBest.png";
-import { TasksCard } from "./TasksCard.tsx";
-import { AnimatedGarland } from "./AnimatedGarland.tsx";
+import {TasksCard} from "./TasksCard.tsx";
+import {AnimatedGarland} from "./AnimatedGarland.tsx";
 
 export const HeroSection = () => {
 
     const { width } = useWindowWidth();
-
-    let content;
+    type ContentWidth = "desktop-xl-only" | "desktop-only" | "tablet-only" | "mobile-only";
+    let content: ContentWidth;
     if (width >= 1980) {
         content = 'desktop-xl-only'
     } else if (width <= 1979 && width >= 1280) {
@@ -41,6 +41,18 @@ export const HeroSection = () => {
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+        },
+        {
+            id: 4,
+            taskName: "Название задачи",
+            name: "Иванов Иван",
+            story: `Рассказ об участнике`,
+        },
+        {
+            id: 5,
+            taskName: "Название задачи",
+            name: "Иванов Иван",
+            story: `Рассказ об участнике`,
         }
     ]
 
@@ -55,7 +67,7 @@ export const HeroSection = () => {
             tablet-only:h-[62vw]
             desktop-xl-only:h-[40vw]
             desktop-only:h-[50vw]
-            mobile-only:aspect-[1/1.2] mobile-only:h-[110vw]
+            mobile-only:aspect-[1/1.2] mobile-only:h-[138vw]
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
             bg-white z-[1]
         "
@@ -96,7 +108,7 @@ export const HeroSection = () => {
             {content === 'desktop-xl-only' &&
                 <div className="absolute left-[13.4vw] rounded-[2vw]">
                     <img src={xlBest} className={"relative -bottom-[2vw] w-[69.5vw]"} alt={'xlBest'} />
-                    <AnimatedGarland className="absolute z-[100] top-[-23vw] w-full h-auto" />
+                    <AnimatedGarland className="absolute z-[100] top-[-22.8vw] w-full h-auto" />
                     <div className="absolute top-0 left-0 right-0 h-[2vw] bg-white z-[101]"></div>
                 </div>
             }
@@ -122,42 +134,50 @@ export const HeroSection = () => {
                     <img src={tabletBest} className={"relative -bottom-[0vw] "} alt={'tabletBest'} />
                     <AnimatedGarland className="absolute z-[100] top-[-32.5vw] left-0 w-full h-auto" />
                     <div className="absolute top-0 left-0 right-0 h-[3vw] bg-white z-[101]"></div>
+                    <img
+                        src={Snowman}
+                        alt="Snowman"
+                        className="z-[1000] relative w-[16vw] h-[16vw] bottom-[25vw] left-[6vw] rotate-[-0.55rad]"
+                    />
+                    <img
+                        src={StickerKnopka}
+                        alt="StickerKnopka"
+                        className="relative w-[35vw] h-[35vw] bottom-[50vw] left-[74vw] z-[1000]"
+                    />
                 </div>
             }
 
 
-            <TasksCard tasks={heroMember} />
+            <TasksCard tasks={heroMember} content={content} />
 
             {/*Снеговик*/}
             <img
                 src={Snowman}
                 alt="Snowman"
-                className="z-[1000] relative w-[9.5vw] h-[9.5vw] bottom-[9vw] left-[21.3vw]
+                className="z-[1000] relative w-[9.5vw] h-[9.5vw] bottom-[9vw] left-[21.3vw] mobile-only:invisible
                  desktop-only:w-[8vw] desktop-only:h-[8vw] desktop-only:bottom-[6.3vw]
-                 desktop-only:left-[22vw] tablet-only:left-[15vw] tablet-only:bottom-[10.6vw] tablet-only:w-[7vw] tablet-only:h-[7vw]
-                 mobile-only:bottom-[40vw] mobile-only:left-[9vw] mobile-only:w-[10vw] mobile-only:h-[10vw] mobile-only:rotate-[-0.55rad]"
+                 desktop-only:left-[22vw] tablet-only:left-[14.5vw] tablet-only:bottom-[11.5vw] tablet-only:w-[7vw] tablet-only:h-[7vw]"
             />
             {/*Стикер*/}
             <img
                 src={StickerKnopka}
                 alt="StickerKnopka"
-                className="relative w-[18vw] h-[18vw] bottom-[16vw] left-[70vw] z-[1000]
+                className="relative w-[18vw] h-[18vw] bottom-[16vw] left-[70vw] z-[1000] mobile-only:invisible
                  desktop-only:w-[17vw] desktop-only:h-[17vw] desktop-only:bottom-[13.8vw]
-                 desktop-only:left-[69.3vw] tablet-only:left-[70vw] tablet-only:bottom-[19.5vw] tablet-only:w-[18vw] tablet-only:h-[18vw]
-                 mobile-only:bottom-[25vw] mobile-only:left-[88vw] mobile-only:w-[20vw] mobile-only:h-[20vw]"
+                 desktop-only:left-[69.3vw] tablet-only:left-[78vw] tablet-only:bottom-[22vw] tablet-only:w-[18vw] tablet-only:h-[18vw]"
             />
 
-            {/* <Garland type="right" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} />
+            {/*<Garland type="right" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} />*/}
 
-            {content !== 'mobile-only' &&
-                < Garland type="center" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} />
-            }
-
-
+            {/*{content !== 'mobile-only' &&*/}
+            {/*    < Garland type="center" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} />*/}
+            {/*}*/}
 
 
 
-            <Garland type="left" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} /> */}
+
+
+            {/*<Garland type="left" content={content as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} /> */}
 
 
 

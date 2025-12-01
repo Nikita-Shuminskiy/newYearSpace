@@ -184,7 +184,6 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
 
 
                 <div ref={ref} className="relative w-full h-[50vw] mobile-only:h-[78vw] overflow-hidden z-[10]">
-                    {/* Оборачиваем все елки в motion.div */}
                     <motion.div
                         style={{ y: yTop }}
                         className="absolute inset-0 w-full h-full"
@@ -292,7 +291,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                         {/*затычка для мобилы слой 2*/}
                         <svg
                             viewBox="0 0 1936 274"
-                            className="invisible mobile-only:visible absolute bottom-[7.1vw] tablet-only:bottom-[18.2vw] left-0 w-full h-auto z-20 translate-y-[5%] mobile-only:bottom-[27vw]"
+                            className="invisible mobile-only:visible absolute bottom-[7.1vw] tablet-only:bottom-[18.2vw] left-0 w-full h-auto z-20 translate-y-[5%] mobile-only:bottom-[21vw]"
                         >
                             <path d="M611.777 82.6135C477.577 82.6135 243.992 13.0179 0 0V592.731H1936V79.6311C1936 79.6311 1666.77 66.5466 1571.72 96.2048C1476.66 125.863 1023.49 100.566 921.244 73.9612C818.998 47.3561 772.114 82.6135 611.777 82.6135Z" fill="#A0E1F2" />
                         </svg>
@@ -353,7 +352,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                 {/* СЛОЙ 5 (Самая передняя белая волна) */}
                 <svg
                     viewBox="0 0 1936 166"
-                    className="absolute bottom-0 left-0 w-full h-auto z-50 mobile-only:bottom-[-0.1vw]"
+                    className="absolute bottom-0 left-0 w-full h-auto z-50 mobile-only:bottom-[-0.3vw]"
                 >
                     <path
                         d="M503.011 102.826C351.176 139.762 125.329 84.4657 0 56.697V350.231H1936V11.5708C1855.08 31.8118 1696.06 58.2013 1623.79 47.5686C1550.13 36.7301 1386.75 -28.04 1219.76 14.0778C1157.63 29.7498 1137.04 64.2181 1038.9 72.742C978.178 78.0165 914.565 37.6437 840.577 37.6437C718.908 37.6437 692.804 56.6564 503.011 102.826Z"

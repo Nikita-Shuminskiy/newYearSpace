@@ -22,10 +22,9 @@ export const SponsorSection = () => {
             id="organizers"
             className="
             relative w-full overflow-hidden
-            tablet-only:aspect-[16/9]
+            tablet-only:aspect-[16/9] tablet-only:h-[40vw]
             mobile-only:aspect-[1/1.2] mobile-only:h-[100vw]
-            -mt-[0.1vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]
-            "
+            -mt-[0.1vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]"
         >
 
             {/*Текст*/}
@@ -653,7 +652,7 @@ export const SponsorSection = () => {
                     </svg>
 
                     <svg
-                        className="absolute top-0 left-0 w-full h-auto z-[2]"
+                        className="absolute -top-[1.4vw] left-0 w-full h-auto z-[2]"
                         viewBox="0 0 1280 482"
                         fill="none"
                         style={{ pointerEvents: 'none' }}
