@@ -26,11 +26,11 @@ const App: React.FC = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://newyear.csspace.io" />
         <meta property="og:site_name" content="CS Space" />
-        <meta property="og:image" content="/image/1.webp" />
+        <meta property="og:image" content="https://newyear.csspace.io/image/1.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Новый год / CS Space" />
         <meta name="twitter:description" content="Новогодние соревнования и лучшие победители. Новый год вместе с CS Space и Pinely!" />
-        <meta name="twitter:image" content="/image/1.webp" />
+        <meta name="twitter:image" content="https://newyear.csspace.io/image/1.webp" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="CS Space, Pinely" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

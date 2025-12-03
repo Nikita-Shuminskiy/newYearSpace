@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default function sitemapPlugin(options = {}) {
   const {
-    hostname = 'https://lama.school',
+    hostname = 'https://newyear.csspace.io',
     routes = ['/'],
     outDir = 'dist'
   } = options;

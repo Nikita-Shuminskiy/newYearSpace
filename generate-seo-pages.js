@@ -154,8 +154,13 @@ function loadArticlesList() {
 
 // Основная функция генерации
 function generateSEOPages() {
-    console.log('🚀 Генерация SEO страниц...');
+
     
+    // Для новогоднего сайта CS Space генерация статей не требуется
+
+    
+    // Раскомментировать ниже, если понадобится генерация статей в будущем
+    /*
     const contentDir = path.join(__dirname, 'public', 'content');
     const articlesDir = path.join(__dirname, 'public', 'articles');
     const dataDir = path.join(__dirname, 'dist', 'data');
@@ -228,8 +233,7 @@ function generateSEOPages() {
         fs.copyFileSync(sourceJsonPath, distJsonPath);
         console.log('✅ Скопирован: dist/data/articlesList.json');
     }
-    
-    console.log('🎯 Генерация завершена!');
+    */
 }
 
 // Запускаем генерацию

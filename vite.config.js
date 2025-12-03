@@ -27,22 +27,9 @@ export default defineConfig({
       },
     }),
     sitemapPlugin({
-      hostname: 'https://lama.school',
+      hostname: 'https://newyear.csspace.io',
       routes: [
-        '/',
-        '/privacy-policy',
-        '/offer-agreement',
-        '/user-agreement',
-        '/about',
-        '/team',
-        '/pricing',
-        '/contact',
-        '/articles/1',
-        '/articles/2',
-        '/articles/3',
-        '/articles/4',
-        '/articles/5',
-        '/test-error'
+        '/'
       ]
     })
   ],
@@ -64,7 +51,8 @@ export default defineConfig({
           router: ['react-router-dom']
         }
       }
-    }
+    },
+    copyPublicDir: true
   },
   resolve: {
     alias: {
