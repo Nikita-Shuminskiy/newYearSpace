@@ -34,10 +34,10 @@ export const RulesSection = () => {
             id="rules"
             className="
     relative overflow-hidden
-    h-[39vw] w-[100vw]
-    desktop-only:h-[44.5vw]
+    h-[30vw] w-[100vw]
+    desktop-only:h-[24.5vw]
     tablet-only:h-[62vw]
-    mobile-only:h-[220vw]   
+    mobile-only:h-[120vw]   
 "
         >
 

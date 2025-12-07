@@ -1,5 +1,4 @@
 import { useWindowWidth } from "@/hooks/useWindowWidth.ts";
-import { HeroSection } from "./HeroSection";
 
 export const SponsorSection = () => {
     const { width } = useWindowWidth();
@@ -30,7 +29,7 @@ export const SponsorSection = () => {
 
             {/*Текст*/}
             <div className="z-[1000] relative flex flex-col items-center justify-start mt-[7vw] desktop-only:mt-[0vw] tablet-only:mt-[0vw] mobile-only:mt-[6vw] -pr-[1vw]">
-                <span className={`
+                {/* <span className={`
   text-white
   font-machina 
   font-extrabold 
@@ -45,10 +44,10 @@ export const SponsorSection = () => {
   mobile-only:tracking-normal
   desktop-only:text-[clamp(28px,4.5vw,28px)]
 `}>
-                    {/* ОРГАНИЗАТОРЫ СОБЫТИЯ */}
-                </span>
+                    ОРГАНИЗАТОРЫ СОБЫТИЯ
+                </span> */}
                 <div className={"flex mobile-only:flex-col items-end mobile-only:items-center justify-center gap-[0.5vw]"}>
-                    <p className={`
+                    {/* <p className={`
   text-white 
   font-machina 
   font-normal 
@@ -63,14 +62,10 @@ export const SponsorSection = () => {
   pt-[1.5vw]
   pb-[0.3vw]
   `}>
-                        {/* Соревнования организуют ведущие специалисты */}
-                    </p>
+                        Соревнования организуют ведущие специалисты
+                    </p> */}
                 </div>
             </div>
-
-
-
-
 
             {content === 'desktop-xl-only' &&
                 <div className="absolute top-0 left-0 right-0 rounded-[2vw]">
@@ -1024,9 +1019,9 @@ export const SponsorSection = () => {
             }
 
             {/*Табличка*/}
-            <div className="relative z-[999] top-0 w-[42.6vw] h-[17.3vw] desktop-only:w-[40.4vw] desktop-only:h-[25vw] tablet-only:w-[66.5vw] tablet-only:h-[30vw] mobile-only:w-[100vw] mobile-only:h-[73vw] flex flex-col justify-center items-center left-[29vw] mt-[2vw] tablet-only:left-[16.5vw] mobile-only:left-[0vw] rounded-[2vw] mobile-only:mt-[5vw] mobile-only:rounded-[6vw]">
+            {/* <div className="relative z-[999] top-0 bg-white w-[42.6vw] h-[17.3vw] desktop-only:w-[40.4vw] desktop-only:h-[25vw] tablet-only:w-[66.5vw] tablet-only:h-[30vw] mobile-only:w-[100vw] mobile-only:h-[73vw] flex flex-col justify-center items-center left-[29vw] mt-[2vw] tablet-only:left-[16.5vw] mobile-only:left-[0vw] rounded-[2vw] mobile-only:mt-[5vw] mobile-only:rounded-[6vw]">
                 <div>
-                    {/* <div className="flex flex-col justify-center items-center mobile-only:pb-[1.5vw]">
+                    <div className="flex flex-col justify-center items-center mobile-only:pb-[1.5vw]">
                         <svg className={"w-[6.5vw] desktop-only:w-[7vw] tablet-only:w-[10vw] mobile-only:w-[25vw]"} viewBox="0 0 126 78" fill="none">
                             <rect x="3" y="3" width="72" height="72" rx="35" fill="#488B9E" />
                             <rect x="3" y="3" width="72" height="72" rx="35" stroke="white" stroke-width="6" />
@@ -1039,10 +1034,10 @@ export const SponsorSection = () => {
                         <p className={"font-machina font-extrabold text-[#488B9E] text-[clamp(24px,1.3vw,24px)] desktop-only:text-[clamp(18px,1.3vw,18px)] tablet-only:text-[clamp(16px,1.3vw,16px)] mobile-only:text-[clamp(16px,1.3vw,16px)] desktop-only:pt-[1vw] tablet-only:pb-[1.5vw]"}>
                             CS Space и Pinely
                         </p>
-                    </div> */}
+                    </div>
 
                 </div>
-                {/* <div className={"flex justify-center items-center text-center pb-[1vw] pt-[1vw]"}>
+                <div className={"flex justify-center items-center text-center pb-[1vw] pt-[1vw]"}>
                     <p className={"text-[clamp(18px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] px-[2vw] font-machina text-[#488B9E] mobile-only:rounded-[10vw] tracking-[-0.01em] leading-[1.3] desktop-only:leading-[1.7vw] tablet-only:leading-[1.7vw] tablet-only:pb-[1vw] "}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
@@ -1054,22 +1049,8 @@ export const SponsorSection = () => {
                     <div className={"px-[1.2vw] desktop-only:px-[1.8vw] tablet-only:px-[2vw] mobile-only:px-[5vw] py-[0.7vw] tablet-only:py-[1.3vw] desktop-only:py-[1vw] mobile-only:py-[3vw] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(14px,1.3vw,14px)] bg-[#488B9E33] text-[#488B9E] font-machina font-extrabold rounded-[2vw] tablet-only:rounded-[3vw] mobile-only:rounded-[6vw]"}>
                         Pinely
                     </div>
-                </div> */}
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                </div>
+            </div> */}
         </section>
     )
 }

@@ -11,8 +11,6 @@ export const Footer = () => {
         content = ""
     }
 
-
-
     return (
         <>
             {content !== 'mobile-only'
