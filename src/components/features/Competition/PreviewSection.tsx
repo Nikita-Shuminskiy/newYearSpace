@@ -114,14 +114,14 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
             }
 
 
-            <div className="relative z-40 flex flex-col items-center w-full pt-[14.4vw] pr-[3vw] tablet-only:pt-[21vw] mobile-only:pl-[3vw] mobile-only:pt-[60.5vw]">
+            <div className="relative z-40 flex flex-col items-center w-full pt-[13.4vw] pr-[3vw] tablet-only:pt-[19vw] mobile-only:pl-[3vw] mobile-only:pt-[60.5vw]">
                 <p className="
         text-cyan-600 tracking-wide font-extrabold font-machina
         mb-[0.7vh] tablet-only:mb-[1.3vh] mobile-only:mb-[1.8vw]
         text-[clamp(20px,2.7vw,52px)] tablet-only:text-[18px] tablet-only:tracking-normal mobile-only:text-[16px] mobile-only:tracking-normal
         relative
     ">
-                    НОВОГОДНИЕ
+                    РЕЙТИНГ
                 </p>
 
                 <h1 className="
@@ -132,10 +132,10 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
         flex items-center justify-center
         relative
     ">
-                    <span>СОРЕ</span>
+                    <span>УЧАС</span>
 
                     <span className="relative inline-flex items-start">
-                        <span>В</span>
+                        <span>Т</span>
                         <svg
                             viewBox="0 0 55 54"
                             className="
@@ -150,8 +150,11 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                         </svg>
                     </span>
 
-                    <span>АНОВАНИЯ</span>
+                    <span>НИКОВ</span>
                 </h1>
+                <span className="mb-[1vw] text-center text-cyan-600  font-machina font-normal leading-none tracking-[-0.03em]">
+                    Решайте задачи, чтобы подняться на вершину рейтинга до конца года!
+                </span>
 
                 <button
                     onClick={() => handleClick("winners")}
@@ -520,6 +523,12 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
             <div className="absolute top-[0vw] left-[-3vw] invisible mobile-only:visible">
                 <Garland type="center" content={contentWidth as 'desktop-xl-only' | 'desktop-only' | 'tablet-only' | 'mobile-only'} />
             </div>
+
+
+
+
+
+
         </section>
     )
 };

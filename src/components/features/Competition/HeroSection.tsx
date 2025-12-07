@@ -1,11 +1,11 @@
 import StickerKnopka from "@/assets/image/StickerKnopka.png";
 import Snowman from "@/assets/image/Snowman.png";
-import {useWindowWidth} from "@/hooks/useWindowWidth.ts";
+import { useWindowWidth } from "@/hooks/useWindowWidth.ts";
 import test from "@/assets/image/test.png";
 import xlBest from "@/assets/image/xlBest.png";
 import tabletBest from "@/assets/image/tabletBest.png";
-import {TasksCard} from "./TasksCard.tsx";
-import {AnimatedGarland} from "./AnimatedGarland.tsx";
+import { TasksCard } from "./TasksCard.tsx";
+import { AnimatedGarland } from "./AnimatedGarland.tsx";
 
 export const HeroSection = () => {
 
@@ -64,10 +64,10 @@ export const HeroSection = () => {
             relative w-full overflow-hidden
             aspect-[16/10] md:aspect-[16/9]
             tablet-only:aspect-[16/9]
-            tablet-only:h-[62vw]
+            tablet-only:h-[50vw]
             desktop-xl-only:h-[40vw]
             desktop-only:h-[50vw]
-            mobile-only:aspect-[1/1.2] mobile-only:h-[138vw]
+            mobile-only:aspect-[1/1.2] mobile-only:h-[110vw]
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
             bg-white z-[1]
         "
@@ -90,19 +90,20 @@ export const HeroSection = () => {
 `}>
                     ЛУЧШИЕ ЗАДАЧИ
                 </span>
-                <p className={`
+                <div className={`
   text-[#488B9E] 
   font-machina 
   font-normal 
-  leading-none 
+  leading-[1.5] 
   tracking-[-0.03em]
-  text-center
+  text-left
   text-[clamp(18px,1.3vw,18px)]
   tablet-only:text-[clamp(14px,1.3vw,14px)]
   mobile-only:text-[clamp(12px,0.4vw,12px)]
   `}>
-                    Публикуем список победителей в нашем соревновании
-                </p>
+
+                    Голосуйте за самые интересные задачи, и мы отметим их авторов
+                </div>
             </div>
 
             {content === 'desktop-xl-only' &&

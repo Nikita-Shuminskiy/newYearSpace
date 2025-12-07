@@ -1,17 +1,19 @@
-import React, {useState} from 'react';
-import {Helmet} from 'react-helmet';
-import {useYandexMetrika} from './hooks/useYandexMetrika';
-import {PreviewSection} from "@/components/features/Competition/PreviewSection.tsx";
-import {WinnersList} from "@/components/features/Competition/WinnersList.tsx";
-import {HeroSection} from "@/components/features/Competition/HeroSection.tsx";
-import {RulesSection} from "@/components/features/Competition/RulesSection.tsx";
-import {SponsorSection} from "@/components/features/Competition/SponsorSection.tsx";
-import {Footer} from "@/components/layout/Footer/Footer.tsx";
-import {MenuMobail} from "@/components/features/Menu/MenuMobail.tsx";
+import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
+import { useYandexMetrika } from './hooks/useYandexMetrika';
+import { PreviewSection } from "@/components/features/Competition/PreviewSection.tsx";
+import { WinnersList } from "@/components/features/Competition/WinnersList.tsx";
+import { HeroSection } from "@/components/features/Competition/HeroSection.tsx";
+import { RulesSection } from "@/components/features/Competition/RulesSection.tsx";
+import { SponsorSection } from "@/components/features/Competition/SponsorSection.tsx";
+import { Footer } from "@/components/layout/Footer/Footer.tsx";
+import { MenuMobail } from "@/components/features/Menu/MenuMobail.tsx";
+import { NewRulesSection } from "@/components/features/Competition/NewRulesSection.tsx";
+import { AdventSection } from "@/components/features/Competition/AdventSection.tsx";
 
 
 const App: React.FC = () => {
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   useYandexMetrika();
   return (
     <>
@@ -30,31 +32,32 @@ const App: React.FC = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Новый год / CS Space" />
         <meta name="twitter:description" content="Новогодние соревнования и лучшие победители. Новый год вместе с CS Space и Pinely!" />
-        <meta name="twitter:image" content="https://newyear.csspace.io/image/1.webp" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="CS Space, Pinely" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Helmet>
 
- <div className={isMenuOpen ? 'overflow-hidden h-screen' : ''}>
- <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
-        <PreviewSection onCLickMenu={() => setIsMenuOpen(true)} />
- </div>
-         <WinnersList/>
+      <div className={isMenuOpen ? 'overflow-hidden h-screen' : ''}>
+        <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+          <PreviewSection onCLickMenu={() => setIsMenuOpen(true)} />
+        </div>
+        <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+          <AdventSection />
+        </div>
+        <NewRulesSection />
+        <WinnersList />
 
-     <HeroSection/>
+        <HeroSection />
         <div>
-        <RulesSection />
-    </div>
-            <SponsorSection />
-    <Footer/>
-</div>
-        {isMenuOpen && (
-            <MenuMobail onClickBackMenu={() => setIsMenuOpen(false)}/>
-        )}
-
-
+          <RulesSection />
+        </div>
+        <SponsorSection />
+        <Footer />
+      </div>
+      {isMenuOpen && (
+        <MenuMobail onClickBackMenu={() => setIsMenuOpen(false)} />
+      )}
     </>
   );
 };

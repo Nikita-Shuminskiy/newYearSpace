@@ -1,12 +1,14 @@
+import { FC } from "react";
+
 export const Header: FC = () => {
-    const headerList = ["Главная", "Победители", "Лучшие задачи", "Правила участия", "Организаторы"];
+    const headerList = ["Главная", "Победители", "Лучшие задачи", "Правила участия"];
 
     const anchors: Record<string, string> = {
         "Главная": "preview",
         "Победители": "winners",
         "Лучшие задачи": "tasks",
         "Правила участия": "rules",
-        "Организаторы": "organizers",
+        //  "Организаторы": "organizers",
     };
 
     const handleClick = (id: string) => {
