@@ -121,7 +121,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
         text-[clamp(20px,2.7vw,52px)] tablet-only:text-[18px] tablet-only:tracking-normal mobile-only:text-[16px] mobile-only:tracking-normal
         relative
     ">
-                    НОВОГОДНИЕ
+                    НОВОГОДНЕЕ
                 </p>
 
                 <h1 className="
@@ -369,10 +369,9 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                 <motion.div
                     ref={cardsRef}
                     style={{ y: yBot }}
-                    className="
-                    
-        absolute z-[99999999999999]
-        left-[6.2vw] bottom-[7.95vw] mobile-only:bottom-[12.4vw] mobile-only:left-[0.7vw]
+                    className="    
+        absolute z-50
+        left-[6.2vw] bottom-[7.95vw] mobile-only:bottom-[17.4vw] mobile-only:left-[0.7vw]
         tablet-only:left-[2.5vw] tablet-only:bottom-[11.1vw]
         tablet-only:flex-col
         tablet-only:items-start
@@ -393,8 +392,13 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                 
                
             ">
-                        <p className="font-unbounded font-extrabold text-[18px] mobile-only:text-[16px]">CS Space</p>
-                        <p className="font-unbounded font-normal text-[14px] mobile-only:text-[12px]">клуб технологий и науки</p>
+                        <div className="flex items-center gap-[0.5vw]">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="22" viewBox="0 0 28 30" fill="none" >
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.45506 8.18173C5.45506 3.66309 9.11752 0 13.6354 0C18.1533 0 21.8157 3.66309 21.8157 8.18173C21.8157 8.64629 21.777 9.10193 21.7026 9.54534H21.8157C23.0707 9.54534 24.0881 10.5629 24.0881 11.818V15.8612C24.6374 16.3517 25.1594 16.878 25.6627 17.4604C27.2655 19.3152 27.7365 21.5798 26.7741 23.5755C25.8782 25.4333 23.9075 26.7057 21.339 27.1967C21.1518 28.7753 19.8089 29.9997 18.1801 29.9997H9.09072C7.46193 29.9997 6.11903 28.7753 5.93182 27.1967C3.36326 26.7057 1.39262 25.4333 0.496706 23.5755C-0.465711 21.5798 0.00525502 19.3152 1.60809 17.4604C2.11135 16.878 2.63338 16.3517 3.18274 15.8612V11.818C3.18274 10.5629 4.2001 9.54534 5.45506 9.54534H5.56816C5.49378 9.10193 5.45506 8.64629 5.45506 8.18173ZM13.6354 16.3635C15.3015 16.3635 16.8512 15.8653 18.1439 15.0098C20.5496 16.4464 22.1706 17.59 23.5997 19.2438C24.6491 20.458 24.7119 21.5742 24.3181 22.3907C23.95 23.1539 23.0332 23.9686 21.3613 24.399V19.9998C21.3613 18.2425 19.937 16.818 18.1801 16.818H9.09072C7.3338 16.818 5.90949 18.2425 5.90949 19.9998V24.399C4.23762 23.9686 3.32081 23.1539 2.95272 22.3907C2.55895 21.5742 2.62179 20.458 3.6711 19.2438C5.10016 17.59 6.72122 16.4464 9.12689 15.0098C10.4196 15.8653 11.9693 16.3635 13.6354 16.3635ZM13.6354 2.72724C10.6235 2.72724 8.18184 5.1693 8.18184 8.18173C8.18184 11.1942 10.6235 13.6362 13.6354 13.6362C16.6473 13.6362 19.089 11.1942 19.089 8.18173C19.089 5.1693 16.6473 2.72724 13.6354 2.72724ZM8.63628 19.9998C8.63628 19.7488 8.83974 19.5452 9.09072 19.5452H18.1801C18.431 19.5452 18.6345 19.7488 18.6345 19.9998V26.8179C18.6345 27.0689 18.431 27.2724 18.1801 27.2724H9.09072C8.83974 27.2724 8.63628 27.0689 8.63628 26.8179V19.9998Z" fill="white" />
+                            </svg>
+                            <p className="font-unbounded font-extrabold text-[18px] mobile-only:text-[14px]">CS Space</p>
+                        </div>
+                        <p className="font-unbounded font-normal text-[14px] mobile-only:text-[10px]">клуб технологий и науки</p>
                     </div>
 
                     {/* Карточка 2: Pinely */}

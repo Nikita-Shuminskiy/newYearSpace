@@ -24,11 +24,12 @@ export const AdventSection: FC = () => {
     return (
         <section
             className="
+            py-[40px] px-[20px]
                 relative w-full overflow-hidden
             
                 rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
-                py-[clamp(40px,8vw,120px)] tablet-only:py-[60px] mobile-only:py-[40px]
-                px-[clamp(20px,5vw,80px)] tablet-only:px-[40px] mobile-only:px-[20px]
+                 tablet-only:py-[60px] mobile-only:py-[40px]
+                tablet-only:px-[40px] mobile-only:px-[20px]
             "
         >
             <div className="relative z-40 flex flex-col items-center justify-center w-full max-w-[1400px] mx-auto text-center">
@@ -36,11 +37,12 @@ export const AdventSection: FC = () => {
                     text-cyan-600 
                     font-machina 
                     font-bold 
-                    leading-[1.4]
+                    leading-[1.8]
                     tracking-tight
-                    mb-[clamp(20px,3vw,40px)] tablet-only:mb-[24px] mobile-only:mb-[20px]
-                    text-[clamp(20px,2.5vw,36px)] tablet-only:text-[20px] mobile-only:text-[18px]
-                    space-y-[clamp(16px,2vw,24px)] tablet-only:space-y-[18px] mobile-only:space-y-[16px]
+                    tablet-only:mb-[24px] mobile-only:mb-[20px]
+                    tablet-only:text-[16px] mobile-only:text-[14px]
+                    tablet-only:space-y-[16px] mobile-only:space-y-[14px]
+                    text-center
                 ">
                     <p>
                         Новогоднее адвент-соревнование CS Space — это увлекательный способ считать дни до начала 2026 года.
@@ -52,7 +54,7 @@ export const AdventSection: FC = () => {
                         За решённые задачи участники получают баллы, и попадают в топ рейтинга. Начинаем отсчёт до Нового Года 15 декабря — присоединяйтесь!
                     </p>
                 </div>
-
+                {/* 
                 <button
                     onClick={handleClick}
                     className="
@@ -78,7 +80,7 @@ export const AdventSection: FC = () => {
                     "
                 >
                     Перейти к соревнованию
-                </button>
+                </button> */}
             </div>
         </section>
     );

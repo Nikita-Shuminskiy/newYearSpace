@@ -26,7 +26,7 @@ export const NewRulesSection = () => {
         h-[38vw] w-[100vw]
         desktop-only:h-[39.5vw]
         tablet-only:h-[59vw]
-        mobile-only:h-[233vw]   
+        mobile-only:h-[249vw]   
     ">
             {/*Текст*/}
             <div className="z-[1000] relative flex flex-col items-center justify-start pt-[2vw] desktop-only:pt-[0vw] tablet-only:pt-[0vw] -pr-[1vw]">
@@ -272,7 +272,7 @@ export const NewRulesSection = () => {
             </div>
 
             {/*ПРАВАЯ КАРТОЧКА*/}
-            <div className={"z-[110] tablet-only:z-[105] relative ring-1 ring-[#C4EFFE] w-[22.5vw] h-[20vw] desktop-only:w-[21.9vw] desktop-only:h-[22.7vw] tablet-only:w-[26vw] tablet-only:h-[40vw] mobile-only:w-[65vw] mobile-only:h-[72vw]  bg-white rounded-[2vw] tablet-only:rounded-[3vw] mobile-only:rounded-[6vw] left-[61.2vw] bottom-[32.7vw] desktop-only:left-[61vw] desktop-only:bottom-[45.5vw] rotate-[0.16rad] desktop-only:rotate-[0.25rad] tablet-only:rotate-[0.22rad] tablet-only:bottom-[68vw] tablet-only:left-[67vw] mobile-only:left-[30vw] mobile-only:-bottom-[5vw] mobile-only:rotate-[0.17rad]"}>
+            <div className={"z-[110] tablet-only:z-[105] relative ring-1 ring-[#C4EFFE] w-[22.5vw] h-[20vw] desktop-only:w-[21.9vw] desktop-only:h-[28.7vw] tablet-only:w-[33vw] tablet-only:h-[40vw] mobile-only:w-[65vw] mobile-only:h-[86vw]  bg-white rounded-[2vw] tablet-only:rounded-[3vw] mobile-only:rounded-[6vw] left-[61.2vw] bottom-[32.7vw] desktop-only:left-[61vw] desktop-only:bottom-[45.5vw] rotate-[0.16rad] desktop-only:rotate-[0.25rad] tablet-only:rotate-[0.22rad] tablet-only:bottom-[68vw] tablet-only:left-[67vw] mobile-only:left-[30vw] mobile-only:-bottom-[5vw] mobile-only:rotate-[0.17rad]"}>
                 <div className={"flex flex-col h-full p-[1vw]  pt-[1.2vw] desktop-only:pt-[1.1vw] desktop-only:pl-[0.4vw] tablet-only:pt-[1.5vw] tablet-only:pl-[0.7vw] mobile-only:pt-[3.5vw]"}>
 
                     {/*Иконка*/}
@@ -325,8 +325,8 @@ export const NewRulesSection = () => {
                             <CheckmarkIcon className="w-[14px] h-[14px] desktop-only:w-[12px] desktop-only:h-[12px] tablet-only:w-[14px] tablet-only:h-[14px] mobile-only:w-[10px] mobile-only:h-[10px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
-                            Новые новогодние истории с задачами будут<br /> выходить постепенно — следите<br /> за постами в нашем
-                            <a className="text-[#488B9E]" href="https://t.me/csspace">Telegram-канале</a>
+                            Новые новогоднее истории с задачами будут<br /> выходить постепенно — следите<br /> за постами в нашем
+                            <a className="text-[#488B9E] opacity-70 underline" href="https://t.me/csspace"> Telegram-канале</a>
                         </p>
                     </div>
 

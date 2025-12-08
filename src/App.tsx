@@ -19,8 +19,8 @@ const App: React.FC = () => {
     <>
 
       <Helmet>
-        <title>Новый год / CS Space — Новогодние соревнования и победители</title>
-        <meta name="description" content="Новогодние онлайн-соревнования и показ победителей! Организаторы: CS Space и Pinely. Все подробности на newyear.csspace.io" />
+        <title>Новый год / CS Space — Новогоднее соревнования и победители</title>
+        <meta name="description" content="Новогоднее онлайн-соревнования и показ победителей! Организаторы: CS Space и Pinely. Все подробности на newyear.csspace.io" />
         <meta name="keywords" content="Новый год, CS Space, Pinely, соревнования, победители, онлайн, ивент, 2025, праздник" />
         <link rel="canonical" href="https://newyear.csspace.io" />
         <meta property="og:title" content="Новый год / CS Space — онлайн-соревнования и победители" />
@@ -31,7 +31,7 @@ const App: React.FC = () => {
         <meta property="og:image" content="https://newyear.csspace.io/image/1.webp" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Новый год / CS Space" />
-        <meta name="twitter:description" content="Новогодние соревнования и лучшие победители. Новый год вместе с CS Space и Pinely!" />
+        <meta name="twitter:description" content="Новогоднее соревнования и лучшие победители. Новый год вместе с CS Space и Pinely!" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="CS Space, Pinely" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
