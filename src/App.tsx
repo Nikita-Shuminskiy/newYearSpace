@@ -45,7 +45,7 @@ const App: React.FC = () => {
         <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
           <AdventSection />
         </div>
-        <NewRulesSection />
+        {/* <NewRulesSection /> */}
         <WinnersList />
 
         <HeroSection />
