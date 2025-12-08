@@ -325,7 +325,8 @@ export const NewRulesSection = () => {
                             <CheckmarkIcon className="w-[14px] h-[14px] desktop-only:w-[12px] desktop-only:h-[12px] tablet-only:w-[14px] tablet-only:h-[14px] mobile-only:w-[10px] mobile-only:h-[10px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
-                            Каждый день с 15 декабря будет<br /> открываться новая новогодняя история с задачей
+                            Новые новогодние истории с задачами будут<br /> выходить постепенно — следите<br /> за постами в нашем
+                            <a className="text-[#488B9E]" href="https://t.me/csspace">Telegram-канале</a>
                         </p>
                     </div>
 
@@ -336,6 +337,7 @@ export const NewRulesSection = () => {
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
                             Решите как можно больше задач<br />  до конца соревнования – 23:59 30 декабря
+
                         </p>
                     </div>
 
@@ -345,7 +347,7 @@ export const NewRulesSection = () => {
                             <CheckmarkIcon className="w-[14px] h-[14px] desktop-only:w-[12px] desktop-only:h-[12px] tablet-only:w-[14px] tablet-only:h-[14px] mobile-only:w-[10px] mobile-only:h-[10px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
-                            Одна решенная задача<br />  – один балл
+                            Каждая задача имеет<br /> свою сложность и приносит разное количество баллов
                         </p>
                     </div>
                 </div>
