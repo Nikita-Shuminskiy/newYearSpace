@@ -12,18 +12,59 @@ interface TasksCardProps {
 }
 
 export const TasksCard = ({ tasks, content }: TasksCardProps) => {
+    // Функция для вычисления дней до 31 декабря
+    const getDaysUntilNewYear = () => {
+        const today = new Date();
+        const currentYear = today.getFullYear();
+        const newYear = new Date(currentYear, 11, 31); // 31 декабря текущего года
+        newYear.setHours(23, 59, 59, 999); // Конец дня
 
+        const diffTime = newYear.getTime() - today.getTime();
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
+        return diffDays > 0 ? diffDays : 0;
+    };
 
+    // Функция для правильного склонения
+    const getDaysWord = (days: number) => {
+        const lastDigit = days % 10;
+        const lastTwoDigits = days % 100;
+
+        if (lastTwoDigits >= 11 && lastTwoDigits <= 19) {
+            return 'дней';
+        }
+        if (lastDigit === 1) {
+            return 'день';
+        }
+        if (lastDigit >= 2 && lastDigit <= 4) {
+            return 'дня';
+        }
+        return 'дней';
+    };
+
+    const daysLeft = getDaysUntilNewYear();
+
+    // Если данных нет, показываем заглушку
+    if (!tasks || tasks.length === 0) {
+        return (
+            <div className={"z-[999] overflow-x-scroll relative ring-1 ring-[#C4EFFE] bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-center items-center left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw] desktop-only:left-[22.9vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] mobile-only:h-[77vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:mt-[1vw]"}>
+                <div className="flex flex-col items-center justify-center text-center p-[2vw]">
+                    <p className="font-machina font-bold text-[#488B9E] desktop-xl-only:text-[clamp(18px,1.8vw,32px)] desktop-only:text-[clamp(18px,2vw,28px)] tablet-only:text-[clamp(16px,2vw,24px)] mobile-only:text-[clamp(14px,1.8vw,20px)]">
+                        До открытия результатов осталось <span className="days-counter">{daysLeft}</span> {getDaysWord(daysLeft)}
+                    </p>
+                </div>
+            </div>
+        );
+    }
 
     if (content === 'mobile-only') {
         return (
             <div className={"z-[999] mt-[1vw] overflow-x-scroll relative ring-1 ring-[#C4EFFE]  bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-start items-start left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw]  desktop-only:left-[22.9vw] " +
                 "p-[1.5vw] gap-y-[1.5vw] tablet-only:gap-y-[1.2vw] mobile-only:gap-y-[7vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] desktop-only:p-[1.2vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] tablet-only:p-[2vw] mobile-only:h-[77vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:p-[4vw]"}>
                 {tasks.map((item, index) => (
-                    <div key={index} className={`flex items-start justify-between w-full`}>
+                    <a key={index} target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0" className={`task-card-item flex items-start justify-between w-full cursor-pointer`}>
                         <div className="flex items-center flex-1">
-                            <div className={"mobile-only:w-[33px] mobile-only:h-[33px] mb-[1vw] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
+                            <div className={"task-icon mobile-only:w-[33px] mobile-only:h-[33px] mb-[1vw] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
                                 <svg className={"w-[7vw]"} viewBox="0 0 42 42">
                                     <path d="M17.1961 36.9395L19.6721 28.2572C19.7009 28.1561 19.7652 28.0687 19.8532 28.0111L21.1386 27.1699C21.4369 26.9747 21.831 27.1991 21.8153 27.5552L21.3818 37.3965C21.3723 37.6114 21.2076 37.7885 20.9933 37.8064C19.2252 37.9539 18.0001 37.6587 17.3962 37.4007C17.2185 37.3248 17.1431 37.1254 17.1961 36.9395Z" fill="#CD9220" />
                                     <path fillRule="evenodd" clipRule="evenodd" d="M19.8445 27.9976L19.3742 27.279L20.6596 26.4378L21.1387 27.1699L19.8533 28.0112C19.7653 28.0687 19.701 28.1561 19.6722 28.2573L17.1962 36.9396C17.1432 37.1254 17.2186 37.3248 17.3963 37.4007L17.0525 38.2054C16.4009 37.927 16.2025 37.2335 16.3547 36.6996L18.8307 28.0173C18.9173 27.7139 19.1102 27.4518 19.3742 27.279L19.8445 27.9976ZM17.3963 37.4007L17.0525 38.2054C17.8047 38.5267 19.1755 38.8361 21.0661 38.6784C21.7346 38.6226 22.2279 38.0743 22.256 37.4351L22.6895 27.5938C22.7366 26.5253 21.5545 25.8521 20.6596 26.4378L21.1387 27.1699C21.437 26.9747 21.8311 27.1991 21.8154 27.5553L21.3819 37.3966C21.3724 37.6114 21.2077 37.7885 20.9934 37.8064C19.2253 37.9539 18.0002 37.6587 17.3963 37.4007Z" fill="#915117" />
@@ -53,8 +94,8 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
                             </div>
                             <div className={"flex flex-col pl-[1vw] tablet-only:pl-[1.5vw] mobile-only:pl-[3vw] flex-1 gap-3"}>
                                 <div className={"flex flex-col"}>
-                                <span className={"desktop-xl-only:text-[clamp(10px,1.2vw,52px)] desktop-only:text-[clamp(18px,1.2vw,18px)] tablet-only:text-[clamp(16px,1.2vw,16px)] mobile-only:text-[clamp(14px,0.6vw,14px)] font-machina font-bold text-[#488B9E] desktop-only:leading-[1.2] tablet-only:leading-[1.2] mobile-only:leading-[1.2]"}>{item.taskName}</span>
-                                <span className="
+                                    <span className={"desktop-xl-only:text-[clamp(10px,1.2vw,52px)] desktop-only:text-[clamp(18px,1.2vw,18px)] tablet-only:text-[clamp(16px,1.2vw,16px)] mobile-only:text-[clamp(14px,0.6vw,14px)] font-machina font-bold text-[#488B9E] desktop-only:leading-[1.2] tablet-only:leading-[1.2] mobile-only:leading-[1.2]"}>{item.taskName}</span>
+                                    <span className="
                                     font-machina font-normal
                                     desktop-xl-only:text-[18px]
                                     desktop-only:text-[18px]
@@ -66,8 +107,8 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
                                     pt-[0.3vw] tablet-only:pt-[0.5vw] mobile-only:pt-[1vw]
                                     opacity-70
                                     ">
-                                {item.name}
-                            </span>
+                                        {item.name}
+                                    </span>
                                 </div>
 
                                 <div className="relative flex items-center bg-[#DAF7FD] px-[2.3vw] py-[2vw] rounded-[3vw] w-fit">
@@ -76,7 +117,7 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
                                         viewBox="0 0 13 11"
                                         fill="none"
                                     >
-                                        <path d="M3.5 6C3.5 2.42229 1.33333 0.666667 0 0C9 1 12.5 6 13.0007 11H1C1 11 3.5 9 3.5 6Z" fill="#DAF7FD"/>
+                                        <path d="M3.5 6C3.5 2.42229 1.33333 0.666667 0 0C9 1 12.5 6 13.0007 11H1C1 11 3.5 9 3.5 6Z" fill="#DAF7FD" />
                                     </svg>
 
                                     <span className="font-machina text-[clamp(12px,1.2vw,12px)] tracking-[-0.03em] leading-[1.1] text-[#488B9E]">
@@ -87,14 +128,12 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
                             </div>
                         </div>
 
-                        <a target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0">
-                            <div className="bg-[#488B9E1A] mobile-only:bg-transparent p-2 rounded-[100px] pt-[3.5vw]">
-                                <svg className="w-[1.5vw] h-[1.5vw] tablet-only:w-[2vw] tablet-only:h-[2vw] mobile-only:w-[4vw] mobile-only:h-[4vw] text-[#488B9E] opacity-50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
+                        <div className="bg-[#488B9E1A] mobile-only:bg-transparent p-2 rounded-[100px] pt-[3.5vw]">
+                            <svg className="task-arrow w-[1.5vw] h-[1.5vw] tablet-only:w-[2vw] tablet-only:h-[2vw] mobile-only:w-[4vw] mobile-only:h-[4vw] text-[#488B9E] opacity-50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                            </svg>
+                        </div>
+                    </a>
                 ))}
             </div>
         )
@@ -106,9 +145,9 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
         <div className={"z-[999] overflow-x-scroll relative ring-1 ring-[#C4EFFE]  bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-start items-start left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw]  desktop-only:left-[22.9vw] " +
             "p-[1.5vw] gap-y-[1.2vw] tablet-only:gap-y-[1.2vw] mobile-only:gap-y-[0.8vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] desktop-only:p-[1.2vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] tablet-only:p-[2vw] mobile-only:h-[65vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:p-[4vw]"}>
             {tasks.map((item, index) => (
-                <div key={index} className={`flex items-center justify-between w-full pt-[0.1vw] tablet-only:pt-[0.3vw] mobile-only:pt-[2.6vw] `}>
+                <a key={index} target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0" className={`task-card-item flex items-center justify-between w-full pt-[0.1vw] tablet-only:pt-[0.3vw] mobile-only:pt-[2.6vw] cursor-pointer`}>
                     <div className="flex items-center flex-1">
-                        <div className={"w-[3vw] h-[3vw] tablet-only:w-[5vw] tablet-only:h-[5vw] mobile-only:w-[33px] mobile-only:h-[33px] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
+                        <div className={"task-icon w-[3vw] h-[3vw] tablet-only:w-[5vw] tablet-only:h-[5vw] mobile-only:w-[33px] mobile-only:h-[33px] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
                             <svg className={"w-[2vw] tablet-only:w-[3vw] mobile-only:w-[6vw]"} viewBox="0 0 42 42">
                                 <path d="M17.1961 36.9395L19.6721 28.2572C19.7009 28.1561 19.7652 28.0687 19.8532 28.0111L21.1386 27.1699C21.4369 26.9747 21.831 27.1991 21.8153 27.5552L21.3818 37.3965C21.3723 37.6114 21.2076 37.7885 20.9933 37.8064C19.2252 37.9539 18.0001 37.6587 17.3962 37.4007C17.2185 37.3248 17.1431 37.1254 17.1961 36.9395Z" fill="#CD9220" />
                                 <path fillRule="evenodd" clipRule="evenodd" d="M19.8445 27.9976L19.3742 27.279L20.6596 26.4378L21.1387 27.1699L19.8533 28.0112C19.7653 28.0687 19.701 28.1561 19.6722 28.2573L17.1962 36.9396C17.1432 37.1254 17.2186 37.3248 17.3963 37.4007L17.0525 38.2054C16.4009 37.927 16.2025 37.2335 16.3547 36.6996L18.8307 28.0173C18.9173 27.7139 19.1102 27.4518 19.3742 27.279L19.8445 27.9976ZM17.3963 37.4007L17.0525 38.2054C17.8047 38.5267 19.1755 38.8361 21.0661 38.6784C21.7346 38.6226 22.2279 38.0743 22.256 37.4351L22.6895 27.5938C22.7366 26.5253 21.5545 25.8521 20.6596 26.4378L21.1387 27.1699C21.437 26.9747 21.8311 27.1991 21.8154 27.5553L21.3819 37.3966C21.3724 37.6114 21.2077 37.7885 20.9934 37.8064C19.2253 37.9539 18.0002 37.6587 17.3963 37.4007Z" fill="#915117" />
@@ -155,14 +194,12 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
                         </div>
                     </div>
 
-                    <a target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0">
-                        <div className="bg-[#488B9E1A] mobile-only:bg-transparent p-2 rounded-[100px]">
-                            <svg className="w-[1.5vw] h-[1.5vw] tablet-only:w-[2vw] tablet-only:h-[2vw] mobile-only:w-[4vw] mobile-only:h-[4vw] text-[#488B9E] opacity-50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </div>
-                    </a>
-                </div>
+                    <div className="bg-[#488B9E1A] mobile-only:bg-transparent p-2 rounded-[100px]">
+                        <svg className="task-arrow w-[1.5vw] h-[1.5vw] tablet-only:w-[2vw] tablet-only:h-[2vw] mobile-only:w-[4vw] mobile-only:h-[4vw] text-[#488B9E] opacity-50 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </a>
             ))}
         </div>
     );

@@ -22,9 +22,9 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
     if (width < 744) {
         content = "Победители";
     } else if (width < 1280) {
-        content = "Список победителей";
+        content = "Рейтинг участников";
     } else {
-        content = "Список победителей";
+        content = "Рейтинг участников";
     }
 
     let contentWidth;
@@ -121,7 +121,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
         text-[clamp(20px,2.7vw,52px)] tablet-only:text-[18px] tablet-only:tracking-normal mobile-only:text-[16px] mobile-only:tracking-normal
         relative
     ">
-                    РЕЙТИНГ
+                    НОВОГОДНИЕ
                 </p>
 
                 <h1 className="
@@ -132,10 +132,10 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
         flex items-center justify-center
         relative
     ">
-                    <span>УЧАС</span>
+                    <span>СОРЕ</span>
 
                     <span className="relative inline-flex items-start">
-                        <span>Т</span>
+                        <span>В</span>
                         <svg
                             viewBox="0 0 55 54"
                             className="
@@ -150,7 +150,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                         </svg>
                     </span>
 
-                    <span>НИКОВ</span>
+                    <span>НОВАНИЯ</span>
                 </h1>
                 <span className="mb-[1vw] text-center text-cyan-600  font-machina font-normal leading-none tracking-[-0.03em]">
                     Решайте задачи, чтобы подняться на вершину рейтинга до конца года!
@@ -420,7 +420,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                     </div>
 
                     {/* Карточка 2: Pinely */}
-                    <div className="
+                    {/* <div className="
                 bg-[#488b9e] text-white
                 rounded-[1.6vw] desktop-only:rounded-[1.2vw] tablet-only:rounded-xl mobile-only:rounded-[4vw]
                 px-[1.1vw] tablet-only:px-[1.3vw] mobile-only:px-[3.5vw]
@@ -445,7 +445,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                             </defs>
                         </svg>
 
-                    </div>
+                    </div> */}
                 </motion.div>
 
                 {/* --- ПРАВЫЙ БЛОК (Соцсети) --- */}

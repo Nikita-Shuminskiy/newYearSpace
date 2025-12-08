@@ -149,7 +149,7 @@ export const HeroSection = () => {
             }
 
 
-            <TasksCard tasks={heroMember} content={content} />
+            <TasksCard tasks={[]} content={content} />
 
             {/*Снеговик*/}
             <img

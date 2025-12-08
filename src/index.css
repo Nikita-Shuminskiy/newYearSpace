@@ -398,3 +398,174 @@ input:-webkit-autofill:active {
 .animated-garland svg > g > g[filter]:nth-of-type(35) { animation-delay: 3.4s; }
 .animated-garland svg g[filter]:nth-of-type(36),
 .animated-garland svg > g > g[filter]:nth-of-type(36) { animation-delay: 3.5s; }
+
+/* Анимация для диагональной надписи */
+@keyframes diagonalFadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(0.7) translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1) translateY(0);
+  }
+}
+
+@keyframes diagonalPulse {
+  0%, 100% {
+    opacity: 0.85;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1);
+    filter: drop-shadow(0 0 5px rgba(72, 139, 158, 0.3));
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(-45deg) scale(1.03);
+    filter: drop-shadow(0 0 15px rgba(72, 139, 158, 0.6));
+  }
+}
+
+@keyframes diagonalShimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.diagonal-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  transform-origin: center;
+  white-space: nowrap;
+  z-index: 10;
+  animation: diagonalFadeIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, 
+             diagonalPulse 4s ease-in-out infinite 1.2s;
+}
+
+.diagonal-text-shimmer {
+  background: linear-gradient(
+    90deg,
+    #488B9E 0%,
+    #6BB5C8 20%,
+    #8DD4E8 40%,
+    #6BB5C8 60%,
+    #488B9E 80%,
+    #6BB5C8 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: diagonalFadeIn 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, 
+             diagonalPulse 4s ease-in-out infinite 1.2s,
+             diagonalShimmer 4s linear infinite 2.5s;
+}
+
+@keyframes numberPop {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.days-counter {
+  display: inline-block;
+  color: #488B9E;
+  font-weight: 900;
+  animation: numberPop 0.6s ease-out 1.5s;
+  text-shadow: 0 0 10px rgba(72, 139, 158, 0.5);
+  background: linear-gradient(135deg, #488B9E 0%, #6BB5C8 50%, #8DD4E8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(72, 139, 158, 0.6));
+}
+
+/* Анимации для TasksCard */
+@keyframes taskCardSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes taskIconBounce {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  25% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+  75% {
+    transform: scale(1.1) rotate(5deg);
+  }
+}
+
+@keyframes taskCardHover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2px);
+  }
+}
+
+.task-card-item {
+  animation: taskCardSlideIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.task-card-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.task-card-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.task-card-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.task-card-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.task-card-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.task-card-item:hover {
+  animation: taskCardHover 0.3s ease-out forwards;
+  transition: all 0.3s ease;
+}
+
+.task-icon {
+  animation: taskIconBounce 2s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.task-card-item:hover .task-icon {
+  animation: taskIconBounce 0.6s ease-in-out infinite;
+}
+
+.task-arrow {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.task-card-item:hover .task-arrow {
+  transform: translateX(4px);
+  opacity: 0.8;
+}
