@@ -50,7 +50,6 @@ export const RulesSection = () => {
     desktop-only:h-[44.5vw]
     tablet-only:h-[62vw]
     mobile-only:h-[220vw]
-
 "
         >
 
@@ -323,7 +322,7 @@ export const RulesSection = () => {
                     </p>
 
                     <div className={"flex desktop-only:pl-[0.1vw] desktop-only:pt-[0.4vw] tablet-only:pt-[1.3vw] mobile-only:pt-[1.5vw] mobile-only:pl-[0.4vw]"}>
-                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                        <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[11px]"}>
                             <CheckmarkIcon className="w-[15px] h-[15px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
@@ -332,7 +331,7 @@ export const RulesSection = () => {
                         </p>
                     </div>
                     <div className={"flex pt-[0.4vw] desktop-only:pl-[0.5vw] desktop-only:pt-[1.1vw] tablet-only:pt-[1.4vw] mobile-only:pt-[1.7vw] mobile-only:pl-[0.7vw]"}>
-                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                        <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[11px]"}>
                             <CheckmarkIcon className="w-[15px] h-[15px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
@@ -344,7 +343,7 @@ export const RulesSection = () => {
 
                     {/*Третий блок с чекмарком*/}
                     <div className={"flex items-start"}>
-                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                        <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[11px]"}>
                             <CheckmarkIcon className="w-[15px] h-[15px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
@@ -435,7 +434,7 @@ export const RulesSection = () => {
                     </p>
 
                     <div className={"flex desktop-only:pt-[0.3vw] tablet-only:pt-[0.9vw] tablet-only:pl-[0.2vw] mobile-only:pt-[1.6vw]"}>
-                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                        <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
                             <CheckmarkIcon className="w-[15px] h-[15px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pt-[1.5vw] mobile-only:pl-[2vw]"}>
@@ -445,7 +444,7 @@ export const RulesSection = () => {
                         </p>
                     </div>
                     <div className={"flex pt-[0.4vw] desktop-only:pt-[0.8vw] desktop-only:pl-[0vw] tablet-only:pt-[1.6vw] tablet-only:pl-[0.3vw] mobile-only:pt-[2.4vw]"}>
-                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                        <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
                             <CheckmarkIcon className="w-[15px] h-[15px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
@@ -518,7 +517,7 @@ export const RulesSection = () => {
 
 
                             <div className={"flex desktop-only:pl-[0.15vw] desktop-only:pt-[0.2vw] tablet-only:pt-[1vw] mobile-only:pt-[1.7vw]"}>
-                                <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                                <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
                                     <CheckmarkIcon className="w-[15px] h-[15px]" />
                                 </div>
                                 <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw]"}>
@@ -528,7 +527,7 @@ export const RulesSection = () => {
 
                             {/*Второй блок с чекмарком*/}
                             <div className={"flex items-start"}>
-                                <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                                <div className={"w-[19px] h-[19px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
                                     <CheckmarkIcon className="w-[15px] h-[15px]" />
                                 </div>
                                 <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[2vw]"}>

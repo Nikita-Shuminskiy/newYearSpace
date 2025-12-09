@@ -30,6 +30,7 @@ export const AdventSection: FC = () => {
                 rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
                  tablet-only:py-[60px] mobile-only:py-[40px]
                 tablet-only:px-[40px] mobile-only:px-[20px]
+                bg-white
             "
         >
             <div className="relative z-40 flex flex-col items-center justify-center w-full max-w-[1400px] mx-auto text-center">

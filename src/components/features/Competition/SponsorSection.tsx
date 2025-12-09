@@ -24,7 +24,7 @@ export const SponsorSection = () => {
             tablet-only:aspect-[16/9] tablet-only:h-[40vw]
 
             mobile-only:aspect-[1/1.2] mobile-only:h-[100vw]
-            -mt-[0.1vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]"
+            -mt-[0.2vw] tablet-only:-mt-[0.1vw] mobile-only:-mt-[0.2vw]"
         >
 
             {/*Текст*/}

@@ -64,7 +64,7 @@ export const HeroSection = () => {
             relative w-full overflow-hidden
             aspect-[16/10] md:aspect-[16/9]
             tablet-only:aspect-[16/9]
-            tablet-only:h-[53vw]
+            tablet-only:h-[63vw]
             desktop-xl-only:h-[40vw]
             desktop-only:h-[50vw]
             mobile-only:aspect-[1/1.2] mobile-only:h-[110vw]

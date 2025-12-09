@@ -8,7 +8,6 @@ import { RulesSection } from "@/components/features/Competition/RulesSection.tsx
 import { SponsorSection } from "@/components/features/Competition/SponsorSection.tsx";
 import { Footer } from "@/components/layout/Footer/Footer.tsx";
 import { MenuMobail } from "@/components/features/Menu/MenuMobail.tsx";
-import { NewRulesSection } from "@/components/features/Competition/NewRulesSection.tsx";
 import { AdventSection } from "@/components/features/Competition/AdventSection.tsx";
 
 
@@ -39,21 +38,25 @@ const App: React.FC = () => {
       </Helmet>
 
       <div className={isMenuOpen ? 'overflow-hidden h-screen' : ''}>
-        <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+        <div className="relative z-[10] px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
           <PreviewSection onCLickMenu={() => setIsMenuOpen(true)} />
         </div>
-        <div className="px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
+        <div className="relative -mt-[0.2vw] z-[100] px-3 py-3 tablet-only:px-0 tablet-only:py-0 mobile-only:px-0 mobile-only:py-0">
           <AdventSection />
         </div>
         {/* <NewRulesSection /> */}
         <WinnersList />
 
         <HeroSection />
-        <div>
-          <RulesSection />
-        </div>
-        <SponsorSection />
-        <Footer />
+          <div>
+              <div className="relative z-[0]">
+                  <RulesSection />
+              </div>
+              <div className="-mt-[2px] relative z-[100]">
+                  <SponsorSection />
+              </div>
+              <Footer />
+          </div>
       </div>
       {isMenuOpen && (
         <MenuMobail onClickBackMenu={() => setIsMenuOpen(false)} />
