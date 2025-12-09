@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const CheckmarkIcon: FC<{ className?: string }> = ({ className = "" }) => (
     <svg
-        className={className}
+        className={`${className} !w-[13px] !h-[9px]`}
         viewBox="0 0 13 9"
         fill="none"
         preserveAspectRatio="xMidYMid meet"
@@ -323,18 +323,18 @@ export const RulesSection = () => {
                     </p>
 
                     <div className={"flex desktop-only:pl-[0.1vw] desktop-only:pt-[0.4vw] tablet-only:pt-[1.3vw] mobile-only:pt-[1.5vw] mobile-only:pl-[0.4vw]"}>
-                        {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[0.9vw] pl-[0.11vw] tablet-only:pt-[]"}>
-                            <CheckmarkIcon className="w-[0.8vw] tablet-only:w-[1.3vw] mobile-only:w-[2.8vw]" />
-                        </div> */}
+                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                            <CheckmarkIcon className="w-[15px] h-[15px]" />
+                        </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
-                            Новые новогоднее истории с задачами будут<br /> выходить постепенно — следите<br /> за постами в нашем
-                            <a className="text-[#488B9E] opacity-70 underline" href="https://t.me/csspace"> Telegram-канале</a>
+                            Новые новогоднее истории с задачами будут<br /> выходить постепенно — следите<br /> за постами в нашем&emsp;
+                            <a className="text-[#488B9E] opacity-70 underline" href="https://t.me/csspace">Telegram-канале</a>
                         </p>
                     </div>
                     <div className={"flex pt-[0.4vw] desktop-only:pl-[0.5vw] desktop-only:pt-[1.1vw] tablet-only:pt-[1.4vw] mobile-only:pt-[1.7vw] mobile-only:pl-[0.7vw]"}>
-                        {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[0.9vw] pl-[0.11vw]"}>
-                            <CheckmarkIcon className="w-[0.8vw] tablet-only:w-[1.3vw] mobile-only:w-[3vw]" />
-                        </div> */}
+                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                            <CheckmarkIcon className="w-[15px] h-[15px]" />
+                        </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
 
                             Решите как можно больше задач<br />  до конца соревнования – 23:59 30 декабря
@@ -344,9 +344,9 @@ export const RulesSection = () => {
 
                     {/*Третий блок с чекмарком*/}
                     <div className={"flex items-start"}>
-                        {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[0.9vw] pl-[0.11vw]"}>
-                            <CheckmarkIcon className="w-[0.8vw] tablet-only:w-[1.3vw] mobile-only:w-[3vw]" />
-                        </div> */}
+                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                            <CheckmarkIcon className="w-[15px] h-[15px]" />
+                        </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
                             Каждая задача имеет<br /> свою сложность и приносит разное количество баллов
                         </p>
@@ -435,9 +435,9 @@ export const RulesSection = () => {
                     </p>
 
                     <div className={"flex desktop-only:pt-[0.3vw] tablet-only:pt-[0.9vw] tablet-only:pl-[0.2vw] mobile-only:pt-[1.6vw]"}>
-                        {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[0.9vw] pl-[0.11vw]"}>
-                            <CheckmarkIcon className="w-[0.8vw] tablet-only:w-[1.2vw] mobile-only:w-[3vw]" />
-                        </div> */}
+                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                            <CheckmarkIcon className="w-[15px] h-[15px]" />
+                        </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pt-[1.5vw] mobile-only:pl-[2vw]"}>
                             После соревнования предложим <br />
                             всем участникам голосовать<br />
@@ -445,9 +445,9 @@ export const RulesSection = () => {
                         </p>
                     </div>
                     <div className={"flex pt-[0.4vw] desktop-only:pt-[0.8vw] desktop-only:pl-[0vw] tablet-only:pt-[1.6vw] tablet-only:pl-[0.3vw] mobile-only:pt-[2.4vw]"}>
-                        {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[0.9vw] pl-[0.11vw]"}>
-                            <CheckmarkIcon className="w-[0.8vw] tablet-only:w-[1.5vw] mobile-only:w-[3vw]" />
-                        </div> */}
+                        <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                            <CheckmarkIcon className="w-[15px] h-[15px]" />
+                        </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw] mobile-only:pt-[1.9vw]"}>
                             {content === 'tablet-only' ?
                                 <>
@@ -518,9 +518,9 @@ export const RulesSection = () => {
 
 
                             <div className={"flex desktop-only:pl-[0.15vw] desktop-only:pt-[0.2vw] tablet-only:pt-[1vw] mobile-only:pt-[1.7vw]"}>
-                                {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] pl-[2px] mobile-only:pl-[10px]"}>
-                                    <CheckmarkIcon className="w-[15px] desktop-only:w-[19px] tablet-only:w-[23px] mobile-only:w-[58px]" />
-                                </div> */}
+                                <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                                    <CheckmarkIcon className="w-[15px] h-[15px]" />
+                                </div>
                                 <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pl-[2vw]"}>
                                     Для участников соревнования<br /> – мерч CS Space и Pinely
                                 </p>
@@ -528,9 +528,9 @@ export const RulesSection = () => {
 
                             {/*Второй блок с чекмарком*/}
                             <div className={"flex items-start"}>
-                                {/* <div className={"w-5 h-5 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] pl-[2px] mobile-only:pl-[10px]"}>
-                                    <CheckmarkIcon className="w-[10px] desktop-only:w-[8px] tablet-only:w-[23px] mobile-only:w-[58px]" />
-                                </div> */}
+                                <div className={"w-[20px] h-[20px] rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px]"}>
+                                    <CheckmarkIcon className="w-[15px] h-[15px]" />
+                                </div>
                                 <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[2vw]"}>
                                     Для авторов лучших<br /> задач – денежное вознаграждение
                                 </p>
