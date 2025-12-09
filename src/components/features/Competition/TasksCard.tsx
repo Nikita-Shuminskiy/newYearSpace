@@ -49,7 +49,7 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
         return (
             <div className={"z-[999] overflow-x-scroll relative ring-1 ring-[#C4EFFE] bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-center items-center left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw] desktop-only:left-[22.9vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] mobile-only:h-[77vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:mt-[1vw]"}>
                 <div className="flex flex-col items-center justify-center text-center p-[2vw]">
-                    <p className="font-machina font-bold text-[#488B9E] desktop-xl-only:text-[clamp(18px,1.8vw,32px)] desktop-only:text-[clamp(18px,2vw,28px)] tablet-only:text-[clamp(16px,2vw,24px)] mobile-only:text-[clamp(14px,1.8vw,20px)]">
+                    <p className="font-machina font-bold horizontal-text horizontal-text-shimmer text-[#488B9E] desktop-xl-only:text-[clamp(18px,1.8vw,32px)] desktop-only:text-[clamp(18px,2vw,28px)] tablet-only:text-[clamp(16px,2vw,24px)] mobile-only:text-[clamp(12px,1.8vw,18px)]">
                         До открытия результатов осталось <span className="days-counter">{daysLeft}</span> {getDaysWord(daysLeft)}
                     </p>
                 </div>

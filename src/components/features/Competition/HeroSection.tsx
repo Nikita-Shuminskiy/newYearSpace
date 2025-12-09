@@ -67,7 +67,7 @@ export const HeroSection = () => {
             tablet-only:h-[63vw]
             desktop-xl-only:h-[40vw]
             desktop-only:h-[50vw]
-            mobile-only:aspect-[1/1.2] mobile-only:h-[110vw]
+            mobile-only:aspect-[1/1.2] mobile-only:h-[130vw]
             rounded-3xl tablet-only:rounded-none mobile-only:rounded-none
             bg-white z-[1]
         "

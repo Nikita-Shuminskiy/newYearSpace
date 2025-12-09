@@ -45,13 +45,13 @@ export const AdventSection: FC = () => {
                     tablet-only:space-y-[16px] mobile-only:space-y-[14px]
                     text-center
                 ">
-                    <p>
+                    <p className={"text-[clamp(18px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E]"}>
                         Новогоднее адвент-соревнование CS Space — это увлекательный способ считать дни до начала 2026 года.
                     </p>
-                    <p>
-                        Соревнование состоит из задач по различным тематикам: теоретической информатике, машинному обучению, математике и программированию. Каждый день открывается новая задача.
+                    <p className={"text-[clamp(18px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E]"}>
+                        Соревнование состоит из задач по различным тематикам: теоретической информатике, машинному обучению, математике и программированию.
                     </p>
-                    <p>
+                    <p className={"text-[clamp(18px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E]"}>
                         За решённые задачи участники получают баллы, и попадают в топ рейтинга. Начинаем отсчёт до Нового Года 15 декабря — присоединяйтесь!
                     </p>
                 </div>
