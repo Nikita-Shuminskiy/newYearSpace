@@ -1,4 +1,5 @@
 import menuMoroz from "@/assets/image/menuMoroz.png";
+import {scroller} from "react-scroll";
 
 
 
@@ -19,13 +20,13 @@ export const MenuMobail = ({ onClickBackMenu }: MenuMobailProps) => {
 
     const handleClick = (id: string) => {
         onClickBackMenu();
-
         setTimeout(() => {
-            const el = document.getElementById(id);
-            if (el) {
-                el.scrollIntoView({ behavior: "smooth", block: "start" });
-            }
-        }, 100);
+            scroller.scrollTo(id, {
+                duration: 1000,
+                delay: 0,
+                smooth: "ease",
+            });
+        }, 200);
     };
 
     return (

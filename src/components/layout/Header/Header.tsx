@@ -1,5 +1,5 @@
 import { FC } from "react";
-
+import {scroller} from "react-scroll";
 export const Header: FC = () => {
     const headerList = ["Главная", "Победители", "Лучшие задачи", "Правила участия", "Организаторы"];
 
@@ -12,10 +12,13 @@ export const Header: FC = () => {
     };
 
     const handleClick = (id: string) => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        scroller.scrollTo(id, {
+            duration: 1000,
+            delay: 0,
+            smooth: "ease",
+        });
     };
+
 
     return (
         <header className="absolute top-0 left-0 w-full z-50 mobile-only:hidden tablet-only:pt-9 desktop-only:pt-10 desktop-xl-only:pt-14">
