@@ -244,7 +244,7 @@ export const RulesSection = () => {
             }
 
             {/*ЛЕВАЯ КАРТОЧКА*/}
-            <div className={"z-[110] mobile-only:z-[120] relative ring-1 ring-[#C4EFFE] ring- w-[22.5vw] h-[19vw] desktop-only:w-[22vw] desktop-only:h-[27vw] mobile-only:w-[100vw] mobile-only:h-[65vw] mobile-only:rotate-[0.23rad] mobile-only:rounded-[6vw] bg-white rounded-[2vw] left-[15vw] -bottom-[3.5vw] desktop-only:left-[15vw] desktop-only:-bottom-[3vw] mobile-only:left-[5vw] mobile-only:-bottom-[8vw] rotate-[0.13rad] " +
+            <div className={"z-[110] mobile-only:z-[120] relative ring-1 ring-[#C4EFFE] ring- w-[22.5vw] h-[19vw] desktop-only:w-[22vw] desktop-only:h-[27vw] mobile-only:w-[100vw] mobile-only:h-[68vw] mobile-only:rotate-[0.23rad] mobile-only:rounded-[6vw] bg-white rounded-[2vw] left-[15vw] -bottom-[3.5vw] desktop-only:left-[15vw] desktop-only:-bottom-[3vw] mobile-only:left-[4vw] mobile-only:-bottom-[8vw] rotate-[0.13rad] " +
                 "desktop-only:-bottom-[3.5vw] desktop-only:left-[14.4vw] desktop-only:rotate-[0.15rad] tablet-only:w-[29.7vw] tablet-only:h-[44vw] tablet-only:rotate-[0.1rad] tablet-only:rounded-[3.2vw] tablet-only:-bottom-[2.2vw] tablet-only:left-[8vw]"}>
                 <div className={"pl-[0.2vw] pt-[1.2vw] desktop-only:pt-[1.7vw] tablet-only:pt-[1.5vw] tablet-only:pl-[0.6vw] mobile-only:pl-[2vw] mobile-only:pt-[3vw]"}>
 
@@ -282,7 +282,7 @@ export const RulesSection = () => {
                         </svg>
                     </div>
                     <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,2vw,16px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] tablet-only:tracking-[-0.02em] leading-[1] desktop-only:leading-[1.3] font-machina font-bold text-center"}>
-                        С 15 по 30 декабря решите как можно больше задач
+                        {content !== 'mobile-only' ? "С 15 по 30 декабря решите как можно больше задач" : <>С 15 по 30 декабря решите как можно<br/> больше задач</>}
                     </p>
 
                     <div className={"flex desktop-only:pl-[0.1vw] desktop-only:pt-[0.4vw] tablet-only:pt-[1.3vw] mobile-only:pt-[1.5vw] mobile-only:pl-[0.4vw] mobile-only:ml-[-2vw]"}>
@@ -307,7 +307,7 @@ export const RulesSection = () => {
 
                     {/*Третий блок с чекмарком*/}
                     <div className={"flex items-start"}>
-                        <div className={" w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[4px] desktop-only:ml-[7px] mobile-only:ml-[0vw]"}>
+                        <div className={" w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[4px] desktop-only:ml-[7px] mobile-only:-ml-[0.5vw]"}>
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px] " />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
@@ -323,7 +323,7 @@ export const RulesSection = () => {
 
             {/*ЦЕНТРАЛЬНАЯ КАРТОЧКА*/}
             <div className={"z-[110] tablet-only:z-[109] relative ring-1 ring-[#C4EFFE] tablet-only:rounded-[3.2vw] mobile-only:rounded-[6vw] w-[22.5vw] h-[17vw] desktop-only:w-[22vw] desktop-only:h-[23vw] tablet-only:w-[28.1vw] tablet-only:h-[33vw] mobile-only:w-[69vw] mobile-only:h-[64vw] bg-white rounded-[2vw] left-[38.7vw] bottom-[16.7vw] desktop-only:left-[39vw] tablet-only:rotate-[-0.12rad] desktop-only:bottom-[23.5vw] rotate-[-0.09rad] desktop-only:rotate-[-0.13rad] tablet-only:bottom-[35vw] tablet-only:left-[39vw] " +
-                "tablet-only:rotate-[-0.14rad] tablet-only:bottom-[30vw] mobile-only:left-[30vw] mobile-only:-bottom-[55vw] mobile-only:-rotate-[0.19rad]"
+                "tablet-only:rotate-[-0.14rad] tablet-only:bottom-[30vw] mobile-only:left-[27vw] mobile-only:-bottom-[55vw] mobile-only:-rotate-[0.19rad]"
             }>
                 <div className={"pl-[0.2vw] pt-[1.2vw] desktop-only:pl-[0.6vw] desktop-only:pt-[1.4vw] tablet-only:pt-[1.8vw] tablet-only:pl-[0.5vw] mobile-only:pt-[3.2vw] mobile-only:pl-[2.5vw]"}>
 
@@ -426,7 +426,7 @@ export const RulesSection = () => {
 
 
                     {/*ПРАВАЯ КАРТОЧКА*/}
-                    <div className={"z-[110] tablet-only:z-[105] relative ring-1 ring-[#C4EFFE] w-[22.5vw] h-[17vw] desktop-only:w-[21.9vw] desktop-only:h-[20.7vw] tablet-only:w-[26vw] tablet-only:h-[28vw] mobile-only:w-[65vw] mobile-only:h-[55vw]  bg-white rounded-[2vw] tablet-only:rounded-[3vw] mobile-only:rounded-[6vw] left-[23.5vw] bottom-[13.7vw] desktop-only:left-[23vw] desktop-only:bottom-[17.1vw] rotate-[0.16rad] desktop-only:rotate-[0.25rad] tablet-only:rotate-[0.22rad] tablet-only:bottom-[20vw] tablet-only:left-[27vw] mobile-only:-left-[20vw] mobile-only:bottom-[111vw] mobile-only:rotate-[0.17rad]"}>
+                    <div className={"z-[110] tablet-only:z-[105] relative ring-1 ring-[#C4EFFE] w-[22.5vw] h-[17vw] desktop-only:w-[21.9vw] desktop-only:h-[20.7vw] tablet-only:w-[26vw] tablet-only:h-[28vw] mobile-only:w-[65vw] mobile-only:h-[55vw]  bg-white rounded-[2vw] tablet-only:rounded-[3vw] mobile-only:rounded-[6vw] left-[23.5vw] bottom-[13.7vw] desktop-only:left-[23vw] desktop-only:bottom-[17.1vw] rotate-[0.16rad] desktop-only:rotate-[0.25rad] tablet-only:rotate-[0.22rad] tablet-only:bottom-[20vw] tablet-only:left-[27vw] mobile-only:-left-[18vw] mobile-only:bottom-[111vw] mobile-only:rotate-[0.17rad]"}>
                         <div className={"pl-[0.2vw] pt-[1.2vw] desktop-only:pt-[1.1vw] desktop-only:pl-[0.4vw] tablet-only:pt-[1.5vw] tablet-only:pl-[0.7vw] mobile-only:pt-[3.5vw]"}>
 
                             <div className={"w-[3.5vw] h-[3.5vw] tablet-only:w-[4.7vw] tablet-only:h-[4.7vw] mobile-only:w-[10vw] mobile-only:h-[10vw] rounded-full bg-[#FFE24B33] flex justify-center items-center ml-[0.8vw] pl-[0.13vw] mobile-only:pr-[0.1vw]"}>
@@ -504,7 +504,7 @@ export const RulesSection = () => {
                         <img
                             src={StickerWinner}
                             alt="StickerWinner"
-                            className="absolute w-[45vw] h-[45vw] -left-[46vw] -bottom-[8vw] z-[1000]"
+                            className="absolute w-[45vw] h-[45vw] -left-[40vw] -bottom-[8vw] z-[1000]"
                         />
                     }
                 </div>

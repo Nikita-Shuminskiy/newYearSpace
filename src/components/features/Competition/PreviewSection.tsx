@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Garland } from "./Garland.tsx";
 import logo from "./logo.svg";
+import {scroller} from "react-scroll";
 
 
 
@@ -21,11 +22,11 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
 
     let content;
     if (width < 744) {
-        content = "Победители";
+        content = "Участвовать";
     } else if (width < 1280) {
-        content = "Рейтинг участников";
+        content = "Участвовать";
     } else {
-        content = "Рейтинг участников";
+        content = "Участвовать";
     }
 
     let contentWidth;
@@ -85,9 +86,11 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
 
 
     const handleClick = (id: string) => {
-        const el = document.getElementById(id);
-        if (!el) return;
-        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        scroller.scrollTo(id, {
+            duration: 1000,
+            delay: 0,
+            smooth: "ease",
+        });
     };
 
     return (
@@ -158,7 +161,7 @@ export const PreviewSection: FC<PreviewSectionProps> = ({ onCLickMenu }: Preview
                 </span>
 
                 <button
-                    onClick={() => handleClick("winners")}
+                    onClick={() => handleClick("rules")}
                     className="
                     mt-[10px]
                     min-w-[252px] 
