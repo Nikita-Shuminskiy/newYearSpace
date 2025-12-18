@@ -50,7 +50,7 @@ export const SponsorSection = () => {
                 </span>
                 <div
                     className={"flex mobile-only:flex-col items-end mobile-only:items-center justify-center gap-[0.5vw]"}>
-                    <p className={`
+                    {/* <p className={`
   text-white 
   font-machina 
   font-normal 
@@ -66,7 +66,7 @@ export const SponsorSection = () => {
   pb-[0.3vw]
   `}>
                         Соревнования организуют ведущие специалисты
-                    </p>
+                    </p> */}
                 </div>
             </div>
 
