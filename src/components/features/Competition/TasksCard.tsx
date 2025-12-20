@@ -12,15 +12,29 @@ interface TasksCardProps {
 }
 
 export const TasksCard = ({ tasks, content }: TasksCardProps) => {
-    // Функция для вычисления дней до 31 декабря
+    // Функция для вычисления дней до 31 декабря (UTC+3)
     const getDaysUntilNewYear = () => {
-        const today = new Date();
-        const currentYear = today.getFullYear();
-        const newYear = new Date(currentYear, 11, 31); // 31 декабря текущего года
-        newYear.setHours(23, 59, 59, 999); // Конец дня
+        const now = new Date();
+        const currentYear = now.getFullYear();
 
-        const diffTime = newYear.getTime() - today.getTime();
-        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        // Получаем текущую дату в UTC+3
+        const utc3Offset = 3 * 60; // 3 часа в минутах
+        const localOffset = now.getTimezoneOffset(); // смещение локального времени в минутах
+        const nowUtc3 = new Date(now.getTime() + (localOffset + utc3Offset) * 60 * 1000);
+
+        // Получаем дату 31 декабря в UTC+3 (начало дня)
+        const newYearUtc3 = new Date(Date.UTC(currentYear, 11, 31, 0, 0, 0, 0));
+
+        // Нормализуем даты до начала дня для правильного подсчета дней
+        const todayUtc3 = new Date(Date.UTC(
+            nowUtc3.getUTCFullYear(),
+            nowUtc3.getUTCMonth(),
+            nowUtc3.getUTCDate()
+        ));
+
+        // Вычисляем разницу в днях
+        const diffTime = newYearUtc3.getTime() - todayUtc3.getTime();
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
         return diffDays > 0 ? diffDays : 0;
     };

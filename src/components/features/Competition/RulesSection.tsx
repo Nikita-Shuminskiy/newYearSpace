@@ -92,12 +92,12 @@ export const RulesSection = () => {
                         Соревнования пройдут на платформе
                     </p>
                     <div className={"mobile-only:pt-[1vw]"}>
-                        <button className={"bg-[#488B9E33] px-1 py-1 rounded-3xl flex items-center justify-center gap-[0.3vw]"}>
+                        <a href="https://stepik.org/course/265880" target="_blank" rel="noopener noreferrer" className={"bg-[#488B9E33] px-1 py-1 rounded-3xl flex items-center justify-center gap-[0.3vw]"}>
                             <span className={"font-machina flex items-end text-[#488B9E] pt-[0.1vw] desktop-only:text-[clamp(16px,4.5vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(14px,1.3vw,14px)]"}>Stepik</span>
                             <svg className={"w-[0.3vw] tablet-only:w-[0.5vw] mobile-only:w-[1vw]"} viewBox="0 0 5 9" fill="none">
                                 <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

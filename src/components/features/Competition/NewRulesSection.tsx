@@ -67,12 +67,12 @@ export const NewRulesSection = () => {
                         Соревнования пройдут на платформе
                     </p>
                     <div className={"mobile-only:pt-[1vw]"}>
-                        <button className={"bg-[#488B9E33] px-1 py-1 rounded-3xl flex items-center justify-center gap-[0.3vw]"}>
+                        <a href="https://stepik.org/course/265880" target="_blank" rel="noopener noreferrer" className={"bg-[#488B9E33] px-1 py-1 rounded-3xl flex items-center justify-center gap-[0.3vw]"}>
                             <span className={"font-machina flex items-end text-[#488B9E] pt-[0.1vw] desktop-only:text-[clamp(16px,4.5vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(14px,1.3vw,14px)]"}>Stepik</span>
                             <svg className={"w-[0.3vw] tablet-only:w-[0.5vw] mobile-only:w-[1vw]"} viewBox="0 0 5 9" fill="none">
                                 <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -315,7 +315,7 @@ export const NewRulesSection = () => {
                     {/*Заголовок*/}
                     <div className={"flex justify-center items-center mb-[0.5vw] desktop-only:mb-[0.3vw] tablet-only:mb-[0.5vw] mobile-only:mb-[1vw]"}>
                         <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,2vw,16px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] tablet-only:tracking-[-0.02em] leading-[1] desktop-only:leading-[1.3] font-machina font-bold text-center"}>
-                            С 15 по 30 декабря решите как можно больше задач
+                            С 20 по 29 декабря решите как можно больше задач
                         </p>
                     </div>
 
@@ -336,7 +336,7 @@ export const NewRulesSection = () => {
                             <CheckmarkIcon className="w-[14px] h-[14px] desktop-only:w-[12px] desktop-only:h-[12px] tablet-only:w-[14px] tablet-only:h-[14px] mobile-only:w-[10px] mobile-only:h-[10px]" />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.9vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
-                            Решите как можно больше задач<br />  до конца соревнования – 23:59 30 декабря
+                            Решите как можно больше задач<br />  до конца соревнования – 23:59 29 декабря
 
                         </p>
                     </div>
