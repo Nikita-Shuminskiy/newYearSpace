@@ -51,8 +51,8 @@ export const AdventSection: FC = () => {
                     <p className={"text-[clamp(18px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E]"}>
                         Соревнование состоит из задач по различным тематикам: теоретической информатике, машинному обучению, математике и программированию.
                     </p>
-                    <p className={"text-[clamp(17px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E]"}>
-                        За решённые задачи участники получают баллы, и попадают в топ рейтинга. Начинаем отсчёт до Нового Года 20 декабря —<br /> присоединяйтесь!
+                    <p className={"text-[clamp(17px,1.3vw,18px)] desktop-only:text-[clamp(16px,1.3vw,16px)] tablet-only:text-[clamp(14px,1.3vw,14px)] mobile-only:text-[clamp(12px,1.3vw,12px)] font-machina font-normal text-[#488B9E] px-[6vw]"}>
+                        За решённые задачи участники получают баллы и попадают в топ рейтинга. Начинаем отсчёт до Нового Года 20 декабря — присоединяйтесь!
                     </p>
                 </div>
                 {/* 
