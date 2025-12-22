@@ -282,7 +282,7 @@ export const RulesSection = () => {
                         </svg>
                     </div>
                     <p className={"text-[#488B9E] text-[clamp(24px,2vw,24px)] desktop-only:text-[clamp(18px,2vw,18px)] tablet-only:text-[clamp(16px,2vw,16px)] mobile-only:text-[clamp(16px,3vw,19px)] tracking-[-0.03em] tablet-only:tracking-[-0.02em] leading-[1] desktop-only:leading-[1.3] font-machina font-bold text-center"}>
-                        {content !== 'mobile-only' ? "С 15 по 30 декабря решите как можно больше задач" : <>С 15 по 30 декабря решите как можно<br /> больше задач</>}
+                        {content !== 'mobile-only' ? "С 20 по 29 декабря решите как можно больше задач" : <>С 20 по 29 декабря решите как можно<br /> больше задач</>}
                     </p>
 
                     <div className={"flex desktop-only:pl-[0.1vw] desktop-only:pt-[0.4vw] tablet-only:pt-[1.3vw] mobile-only:pt-[1.5vw] mobile-only:pl-[0.4vw] mobile-only:ml-[-2vw]"}>
@@ -298,7 +298,7 @@ export const RulesSection = () => {
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px] " />
                         </div>
                         <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.2vw] mobile-only:pt-[1.9vw]"}>
-                            Решите как можно больше задач до конца соревнования — <br />23:59 30 декабря
+                            Решите как можно больше задач до конца соревнования — <br />23:59 29 декабря
                         </p>
                     </div>
 
