@@ -96,7 +96,7 @@ export const HeroSection = () => {
   font-normal 
   leading-[1.5] 
   tracking-[-0.03em]
-  text-left
+  text-center
   text-[clamp(18px,1.3vw,18px)]
   tablet-only:text-[clamp(14px,1.3vw,14px)]
   mobile-only:text-[clamp(12px,0.4vw,12px)]

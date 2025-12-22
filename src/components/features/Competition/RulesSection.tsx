@@ -297,7 +297,7 @@ export const RulesSection = () => {
                         <div className={"w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[4px] desktop-only:ml-[7px]"}>
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px] " />
                         </div>
-                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.2vw] mobile-only:pt-[1.9vw]"}>
+                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,1vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.2vw] mobile-only:pt-[0vw] mobile-only:pb-[1vw]"}>
                             Решите как можно больше задач до конца соревнования — <br />23:59 29 декабря
                         </p>
                     </div>
@@ -307,7 +307,7 @@ export const RulesSection = () => {
                         <div className={" w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[4px] desktop-only:ml-[7px] mobile-only:-ml-[0.2vw]"}>
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px] " />
                         </div>
-                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw]"}>
+                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[1vw] mobile-only:pl-[1.3vw] mobile-only:pt-[1vw]"}>
                             Каждая задача имеет свою сложность<br /> и приносит разное количество баллов
                         </p>
                     </div>
@@ -398,7 +398,7 @@ export const RulesSection = () => {
                         <div className={"w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] desktop-only:ml-[7px] tablet-only:ml-[7px] mobile-only:ml-[0vw]"}>
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px]" />
                         </div>
-                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pt-[1.5vw] mobile-only:pl-[1vw]"}>
+                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pl-[1vw]"}>
                             После соревнования предложим <br />
                             всем участникам голосовать<br />
                             за лучшие задачи
@@ -408,14 +408,14 @@ export const RulesSection = () => {
                         <div className={"w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] desktop-only:ml-[7px] tablet-only:ml-[7px] mobile-only:ml-[0vw]"}>
                             <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px]" />
                         </div>
-                        <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[1vw] mobile-only:pt-[1.9vw] desktop-xl-only:pt-[0.3vw]"}>
+                        <p className={"text-[#488B9E] mobile-only:relative mobile-only:top-[-2px] mobile-only:flex mobile-only:items-center text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1.1] desktop-only:leading-[1.1vw] font-machina pl-[0.5vw] desktop-only:pl-[1.1vw] tablet-only:pl-[1vw] mobile-only:pl-[1vw] desktop-xl-only:pt-[0.3vw]"}>
                             {content === 'tablet-only' ?
                                 <>
                                     Авторы лучших задач<br /> — получат награды
                                 </>
                                 :
                                 <>
-                                    Авторы лучших задач получат награды
+                                    <p className={""}>Авторы лучших задач получат награды</p>
                                 </>
                             }
                         </p>
@@ -481,7 +481,7 @@ export const RulesSection = () => {
                                 <div className={"w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] tablet-only:ml-[7px] mobile-only:ml-[7px]"}>
                                     <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px]" />
                                 </div>
-                                <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pl-[1vw]"}>
+                                <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.03em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1] font-machina pl-[0.5vw] desktop-only:pl-[0.8vw] tablet-only:pl-[1vw] mobile-only:pl-[1vw] mobile-only:pt-[0.5vw]"}>
                                     Для участников соревнования – <br />мерч CS Space и Pinely
                                 </p>
                             </div>
@@ -491,7 +491,7 @@ export const RulesSection = () => {
                                 <div className={"w-[28px] h-[28px] desktop-xl-only:w-[36px] desktop-xl-only:h-[36px] shrink-0 rounded-full bg-[#488B9E33] flex justify-center items-center ml-[17px] tablet-only:ml-[7px] mobile-only:ml-[7px]"}>
                                     <CheckmarkIcon className="w-[10px] h-[10px] desktop-xl-only:w-[15px] desktop-xl-only:h-[15px]" />
                                 </div>
-                                <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[1vw]"}>
+                                <p className={"text-[#488B9E] text-[clamp(18px,2vw,18px)] desktop-only:text-[clamp(16px,2vw,16px)] tablet-only:text-[clamp(14px,2vw,14px)] mobile-only:text-[clamp(12px,3vw,16px)] tracking-[-0.02em] leading-[1.4] tablet-only:leading-[1] desktop-only:leading-[1.3vw] mobile-only:leading-[1.1] font-machina pl-[0.5vw] desktop-only:pl-[1vw] tablet-only:pl-[0.9vw] mobile-only:pl-[1vw] mobile-only:pt-[0.1vw]"}>
                                     Для авторов лучших задач – <br />денежное вознаграждение
                                 </p>
                             </div>
