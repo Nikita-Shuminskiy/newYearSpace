@@ -29,30 +29,39 @@ export const HeroSection = () => {
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+            url: "https://www.figma.com/design/a8UcJ9NC52AENadMfOQWo0/CS-Space---PO--Copy-?node-id=297-106184&p=f&t=cgngs57SaVcWittw-0"
         },
         {
             id: 2,
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+            url: "https://www.figma.com/design/a8UcJ9NC52AENadMfOQWo0/CS-Space---PO--Copy-?node-id=297-106184&p=f&t=cgngs57SaVcWittw-0"
+
         },
         {
             id: 3,
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+            url: "https://www.figma.com/design/a8UcJ9NC52AENadMfOQWo0/CS-Space---PO--Copy-?node-id=297-106184&p=f&t=cgngs57SaVcWittw-0"
+
         },
         {
             id: 4,
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+            url: "https://www.figma.com/design/a8UcJ9NC52AENadMfOQWo0/CS-Space---PO--Copy-?node-id=297-106184&p=f&t=cgngs57SaVcWittw-0"
+
         },
         {
             id: 5,
             taskName: "Название задачи",
             name: "Иванов Иван",
             story: `Рассказ об участнике`,
+            url: "https://www.figma.com/design/a8UcJ9NC52AENadMfOQWo0/CS-Space---PO--Copy-?node-id=297-106184&p=f&t=cgngs57SaVcWittw-0"
+
         }
     ]
 

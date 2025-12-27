@@ -37,7 +37,6 @@ export const WinnersList = () => {
         },
         {
             id: 3,
-
             name: "Иванов Иван",
             number: "#000000",
             balls: 17
@@ -167,7 +166,7 @@ export const WinnersList = () => {
                     " tablet-only:rounded-[3vw] mobile-only:rounded-[7vw] mobile-only:w-[86.5vw] mobile-only:h-[142vw] z-[999]"
                 }>
 
-                    <WinnersTable winnersMember={[]} content={content} />
+                    <WinnersTable winnersMember={winnersMember} content={content} />
 
                 </div>
 
