@@ -22,118 +22,36 @@ export const WinnersList = () => {
 
 
     const winnersMember = [
-        // {
-        //     id: 1,
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17
-        // },
-        // {
-        //     id: 2,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17
-        // },
-        // {
-        //     id: 3,
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17
-        // },
-        // {
-        //     id: 4,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17
-        // },
-        // {
-        //     id: 5,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        //
-        // },
-        // {
-        //     id: 6,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        //
-        // },
-        // {
-        //     id: 7,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        //
-        // },
-        // {
-        //     id: 8,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        //
-        // },
-        // {
-        //     id: 9,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        // },
-        // {
-        //     id: 10,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        // },
-        // {
-        //     id: 11,
-        //
-        //     name: "Иванов Иван",
-        //     number: "#000000",
-        //     balls: 17,
-        //     icon: "happyBox"
-        // }
         {
             id: 1,
             name: "Tagir Eminov",
             number: "1-6",
-            balls: 115
+            balls: 115,
+            url: "https://stepik.org/users/432031891",
         },
 
         {
             id: 2,
             name: "Артем Колупаев",
             number: "1-6",
-            balls: 115
+            balls: 115,
+            url: "https://stepik.org/users/652026642",
         },
 
         {
             id: 3,
             name: "Anton Hulikau",
             number: "1-6",
-            balls: 115
+            balls: 115,
+            url: "https://stepik.org/users/35314",
         },
 
         {
             id: 4,
             name: "Aleksandr Miskin",
             number: "1-6",
-            balls: 115
+            balls: 115,
+            url: "https://stepik.org/users/968448982",
         },
 
         {
@@ -141,7 +59,8 @@ export const WinnersList = () => {
             name: "Artur Saakyan",
             number: "1-6",
             balls: 115,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/144304229",
 
         },
 
@@ -150,7 +69,8 @@ export const WinnersList = () => {
             name: "Дмитрий Лигай",
             number: "1-6",
             balls: 115,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/642018569",
 
         },
 
@@ -159,7 +79,8 @@ export const WinnersList = () => {
             name: "Роман Тамразов",
             number: "  7",
             balls: 110,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/570511899",
         },
 
         {
@@ -167,7 +88,8 @@ export const WinnersList = () => {
             name: "Шумилов Алексей",
             number: "8",
             balls: 107,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/167400619",
         },
 
         {
@@ -175,7 +97,8 @@ export const WinnersList = () => {
             name: "Мария Лоскутова",
             number: "9",
             balls: 85,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/231923857",
         },
 
         {
@@ -183,7 +106,8 @@ export const WinnersList = () => {
             name: "Яна Фитковская",
             number: "10",
             balls: 83,
-            icon: "happyBox"
+            icon: "happyBox",
+            url: "https://stepik.org/users/633286894",
         },
     ]
 

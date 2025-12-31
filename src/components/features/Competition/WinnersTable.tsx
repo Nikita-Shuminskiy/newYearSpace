@@ -4,6 +4,7 @@ interface Winner {
     number: string;
     balls: number;
     icon?: string;
+    url: string;
 }
 
 interface WinnersTableProps {
@@ -155,12 +156,15 @@ export const WinnersTable = ({ winnersMember = [], content = 'desktop-xl-only' }
                         </div>
 
                         <div className="flex justify-center w-[20%]">
-                            <button className={"bg-cyan-600/10 rounded-2xl px-[0.3vw] font-machina font-bold text-[#488B9E] flex items-center gap-0"}>
+                            <a
+                                href={item.url}
+                                target="_blank"
+                                className={"bg-cyan-600/10 rounded-2xl px-[0.3vw] font-machina font-bold text-[#488B9E] flex items-center gap-0"}>
                                 <span className={"pt-[0.3vw] desktop-xl-only:text-[clamp(18px,1.2vw,52px)] desktop-only:text-[clamp(16px,1.2vw,16px)] tablet-only:text-[clamp(14px,1.2vw,14px)] mobile-only:text-[clamp(12px,1vw,12px)] tablet-only:pr-[1.4vw]"}>{item.number}</span>
                                 <svg className={"w-[0.4vw] ml-[0.5vw] tablet-only:w-[0.8vw] desktop-only:w-[0.4vw] desktop-only:pt-[0.1.3vw] desktop-only:ml-[0.5vw]"} viewBox="0 0 5 9" fill="none">
                                     <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                 </svg>
-                            </button>
+                            </a>
                         </div>
 
                         <div className="flex justify-end w-[35%]">
@@ -267,14 +271,17 @@ export const WinnersTable = ({ winnersMember = [], content = 'desktop-xl-only' }
                     </div>
 
                     <div className="shrink-0">
-                        <button className={"bg-[#488B9E33] rounded-2xl px-[2vw] py-[0.5vw] font-machina font-bold text-[#488B9E] flex items-center justify-center gap-1 min-w-[12vw]"}>
+                        <a
+                            href={item.url}
+                            target="_blank"
+                            className={"bg-[#488B9E33] rounded-2xl px-[2vw] py-[0.5vw] font-machina font-bold text-[#488B9E] flex items-center justify-center gap-1 min-w-[12vw]"}>
                             <span className={"pt-[0.3vw] text-[clamp(12px,1vw,12px)]"}>{item.number}</span>
                             <span>
                             <svg className={"w-[1.2vw] pt-[0.1vw]"} viewBox="0 0 5 9" fill="none">
                                 <path d="M0.749675 0.75L4.08301 4.08333L0.749674 7.41667" stroke="#488B9E" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                         </span>
-                        </button>
+                        </a>
                     </div>
 
                 </div>
