@@ -22,92 +22,169 @@ export const WinnersList = () => {
 
 
     const winnersMember = [
+        // {
+        //     id: 1,
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17
+        // },
+        // {
+        //     id: 2,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17
+        // },
+        // {
+        //     id: 3,
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17
+        // },
+        // {
+        //     id: 4,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17
+        // },
+        // {
+        //     id: 5,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        //
+        // },
+        // {
+        //     id: 6,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        //
+        // },
+        // {
+        //     id: 7,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        //
+        // },
+        // {
+        //     id: 8,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        //
+        // },
+        // {
+        //     id: 9,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        // },
+        // {
+        //     id: 10,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        // },
+        // {
+        //     id: 11,
+        //
+        //     name: "Иванов Иван",
+        //     number: "#000000",
+        //     balls: 17,
+        //     icon: "happyBox"
+        // }
         {
             id: 1,
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17
+            name: "Tagir Eminov",
+            number: "1-6",
+            balls: 115
         },
+
         {
             id: 2,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17
+            name: "Артем Колупаев",
+            number: "1-6",
+            balls: 115
         },
+
         {
             id: 3,
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17
+            name: "Anton Hulikau",
+            number: "1-6",
+            balls: 115
         },
+
         {
             id: 4,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17
+            name: "Aleksandr Miskin",
+            number: "1-6",
+            balls: 115
         },
+
         {
             id: 5,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Artur Saakyan",
+            number: "1-6",
+            balls: 115,
             icon: "happyBox"
 
         },
+
         {
             id: 6,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Дмитрий Лигай",
+            number: "1-6",
+            balls: 115,
             icon: "happyBox"
 
         },
+
         {
             id: 7,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Роман Тамразов",
+            number: "  7",
+            balls: 110,
             icon: "happyBox"
-
         },
+
         {
             id: 8,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Шумилов Алексей",
+            number: "8",
+            balls: 107,
             icon: "happyBox"
-
         },
+
         {
             id: 9,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Мария Лоскутова",
+            number: "9",
+            balls: 85,
             icon: "happyBox"
         },
+
         {
             id: 10,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
+            name: "Яна Фитковская",
+            number: "10",
+            balls: 83,
             icon: "happyBox"
         },
-        {
-            id: 11,
-
-            name: "Иванов Иван",
-            number: "#000000",
-            balls: 17,
-            icon: "happyBox"
-        }
     ]
 
     return (
