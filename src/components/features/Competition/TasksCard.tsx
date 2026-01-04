@@ -3,7 +3,6 @@ interface TaskItem {
     taskName: string;
     name: string;
     story: string;
-    url: string;
 }
 
 interface TasksCardProps {
@@ -18,26 +17,18 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
         const now = new Date();
         const currentYear = now.getFullYear();
 
-        // Получаем текущую дату в UTC+3
-        const utc3Offset = 3 * 60; // 3 часа в минутах
-        const localOffset = now.getTimezoneOffset(); // смещение локального времени в минутах
-        const nowUtc3 = new Date(now.getTime() + (localOffset + utc3Offset) * 60 * 1000);
+        // Создаем дату 31 декабря в UTC+3 (конец дня 23:59:59)
+        const newYear = new Date(Date.UTC(currentYear, 11, 31, 20, 59, 59, 999));
 
-        // Получаем дату 31 декабря в UTC+3 (начало дня)
-        const newYearUtc3 = new Date(Date.UTC(currentYear, 11, 31, 0, 0, 0, 0));
-
-        // Нормализуем даты до начала дня для правильного подсчета дней
-        const todayUtc3 = new Date(Date.UTC(
-            nowUtc3.getUTCFullYear(),
-            nowUtc3.getUTCMonth(),
-            nowUtc3.getUTCDate()
-        ));
+        // Получаем текущее время в UTC+3
+        const utc3Offset = 3 * 60 * 60 * 1000; // 3 часа в миллисекундах
+        const nowUtc3 = new Date(now.getTime() + (utc3Offset - now.getTimezoneOffset() * 60 * 1000));
 
         // Вычисляем разницу в днях
-        const diffTime = newYearUtc3.getTime() - todayUtc3.getTime();
+        const diffTime = newYear.getTime() - nowUtc3.getTime();
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
 
-        return diffDays > 0 ? diffDays : 0;
+        return 0; //diffDays > 0 ? diffDays :
     };
 
     // Функция для правильного склонения
@@ -77,7 +68,7 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
             <div className={"z-[999] mt-[1vw] overflow-x-scroll relative ring-1 ring-[#C4EFFE]  bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-start items-start left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw]  desktop-only:left-[22.9vw] " +
                 "p-[1.5vw] gap-y-[1.5vw] tablet-only:gap-y-[1.2vw] mobile-only:gap-y-[7vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] desktop-only:p-[1.2vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] tablet-only:p-[2vw] mobile-only:h-[77vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:p-[4vw]"}>
                 {tasks.map((item, index) => (
-                    <a key={index} target="_blank" href={item.url} className={`task-card-item flex items-start justify-between w-full cursor-pointer`}>
+                    <a key={index} target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0" className={`task-card-item flex items-start justify-between w-full cursor-pointer`}>
                         <div className="flex items-center flex-1">
                             <div className={"task-icon mobile-only:w-[33px] mobile-only:h-[33px] mb-[1vw] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
                                 <svg className={"w-[7vw]"} viewBox="0 0 42 42">
@@ -160,7 +151,7 @@ export const TasksCard = ({ tasks, content }: TasksCardProps) => {
         <div className={"z-[999] overflow-x-scroll relative ring-1 ring-[#C4EFFE]  bg-white w-[50.8vw] h-[15.5vw] desktop-only:w-[49.8vw] rounded-[2vw] desktop-only:rounded-[2vw] mobile-only:rounded-[6vw] flex flex-col justify-start items-start left-[22.8vw] -bottom-[14.1vw] desktop-only:-bottom-[15.0vw] tablet-only:-bottom-[17vw]  desktop-only:left-[22.9vw] " +
             "p-[1.5vw] gap-y-[1.2vw] tablet-only:gap-y-[1.2vw] mobile-only:gap-y-[0.8vw] desktop-only:-bottom-[16vw] desktop-only:left-[23vw] desktop-only:p-[1.2vw] tablet-only:left-[15.5vw] tablet-only:-bottom-[15vw] tablet-only:w-[66vw] tablet-only:h-[23vw] tablet-only:p-[2vw] mobile-only:h-[65vw] mobile-only:w-[86.5vw] mobile-only:left-[7.5vw] mobile-only:-bottom-[17vw] mobile-only:p-[4vw]"}>
             {tasks.map((item, index) => (
-                <a key={index} target="_blank" href={item.url} className={`task-card-item flex items-center justify-between w-full pt-[0.1vw] tablet-only:pt-[0.3vw] mobile-only:pt-[2.6vw] cursor-pointer`}>
+                <a key={index} target="_blank" href="https://www.figma.com/design/FCCFBruGAy3azghMRVRjZm/New-Year---CS-Space?node-id=32-5029&t=WwQYJznMyZ9SHxhG-0" className={`task-card-item flex items-center justify-between w-full pt-[0.1vw] tablet-only:pt-[0.3vw] mobile-only:pt-[2.6vw] cursor-pointer`}>
                     <div className="flex items-center flex-1">
                         <div className={"task-icon w-[3vw] h-[3vw] tablet-only:w-[5vw] tablet-only:h-[5vw] mobile-only:w-[33px] mobile-only:h-[33px] rounded-full bg-yellow-300/30 flex justify-center items-center flex-shrink-0"}>
                             <svg className={"w-[2vw] tablet-only:w-[3vw] mobile-only:w-[6vw]"} viewBox="0 0 42 42">
